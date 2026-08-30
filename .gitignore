@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+dist/
+.env
+教學/
+1221 未來教育發展協會/
+家長會/*.pdf
+家長會/*.mp4
+家長會/*.MP4
+家長會/DCD0F02F-0B42-484E-9A95-E29C0E27D43C.jpg
+家長會/IMG_6783.JPG
+家長會/截圖*.png
+工作照片/AI世代媒體是識讀師培計劃.jpg
+工作照片/emotion agility證照照片.jpg
+工作照片/不老部落無邊界.jpg
+證照照片/emergenetics-youth-facilitator.jpg
