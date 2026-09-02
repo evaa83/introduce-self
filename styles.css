@@ -1320,19 +1320,19 @@ p {
   z-index: 1;
   display: grid;
   place-items: center;
-  width: min(840px, 100%);
+  width: min(700px, 100%);
   margin: clamp(42px, 5vw, 58px) auto 0;
-  padding: clamp(16px, 3vw, 26px);
+  padding: clamp(14px, 2.4vw, 22px);
   border: 1px solid rgba(247, 243, 233, 0.13);
-  border-radius: 28px;
+  border-radius: 24px;
   background:
     radial-gradient(circle at 50% 52%, rgba(247, 243, 233, 0.92) 0 50%, rgba(247, 243, 233, 0.42) 72%, rgba(247, 243, 233, 0.1) 100%);
-  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.15);
 }
 
 .terra-pillars img {
   display: block;
-  width: min(700px, 100%);
+  width: min(560px, 100%);
   margin: auto;
 }
 
