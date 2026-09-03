@@ -1322,18 +1322,14 @@ p {
   place-items: center;
   width: min(700px, 100%);
   margin: clamp(42px, 5vw, 58px) auto 0;
-  padding: clamp(14px, 2.4vw, 22px);
-  border: 1px solid rgba(247, 243, 233, 0.13);
-  border-radius: 24px;
-  background:
-    radial-gradient(circle at 50% 52%, rgba(247, 243, 233, 0.92) 0 50%, rgba(247, 243, 233, 0.42) 72%, rgba(247, 243, 233, 0.1) 100%);
-  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.15);
+  padding: 0;
 }
 
 .terra-pillars img {
   display: block;
   width: min(560px, 100%);
   margin: auto;
+  filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.22));
 }
 
 .terra-programs {
