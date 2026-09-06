@@ -2202,3 +2202,162 @@ p {
     animation-duration: 1ms !important;
   }
 }
+
+@media print {
+  @page {
+    size: Letter;
+    margin: 0.55in;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #fffdf7;
+    color: #19312d;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .site-header,
+  .menu-toggle,
+  .hero-actions,
+  .button {
+    display: none !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .proposal-hero,
+  .proposal-section,
+  .proposal-contact {
+    padding: 0;
+  }
+
+  .proposal-hero {
+    grid-template-columns: 1.1fr 0.72fr;
+    min-height: 0;
+    gap: 0.32in;
+    padding-bottom: 0.35in;
+    page-break-after: avoid;
+  }
+
+  .proposal-hero-copy h1 {
+    margin: 0.08in 0 0.16in;
+    font-size: 28pt;
+    line-height: 1.25;
+  }
+
+  .proposal-hero-copy > p:not(.overline),
+  .proposal-copy p,
+  .proposal-contact p:not(.overline) {
+    font-size: 10pt;
+    line-height: 1.75;
+  }
+
+  .proposal-hero-image img {
+    aspect-ratio: 4 / 3.15;
+  }
+
+  .proposal-summary {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0.24in 0 0.38in;
+    page-break-inside: avoid;
+  }
+
+  .proposal-fact {
+    min-height: 0;
+    padding: 0.18in;
+  }
+
+  .proposal-fact strong {
+    font-size: 13pt;
+  }
+
+  .proposal-section {
+    margin-top: 0.34in;
+    padding-top: 0.34in;
+    page-break-inside: avoid;
+  }
+
+  .proposal-section .section-title {
+    margin-bottom: 0.18in;
+  }
+
+  .proposal-section .section-title h2,
+  .proposal-contact h2 {
+    font-size: 20pt;
+    line-height: 1.35;
+  }
+
+  .speaker-profile-grid {
+    grid-template-columns: 1fr 0.45fr;
+    gap: 0.3in;
+  }
+
+  .proposal-theme-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.12in;
+  }
+
+  .proposal-theme,
+  .proposal-theme:nth-child(-n + 3) {
+    grid-column: auto;
+    min-height: 0;
+    padding: 0.18in;
+    page-break-inside: avoid;
+  }
+
+  .proposal-theme p {
+    margin-bottom: 0.12in;
+    font-size: 8pt;
+  }
+
+  .proposal-theme h3 {
+    margin-bottom: 0.1in;
+    font-size: 13pt;
+    line-height: 1.45;
+  }
+
+  .proposal-theme span,
+  .value-item p,
+  .proposal-credentials li {
+    font-size: 9pt;
+    line-height: 1.65;
+  }
+
+  .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.12in;
+  }
+
+  .value-item {
+    padding: 0.18in;
+    page-break-inside: avoid;
+  }
+
+  .proposal-credentials {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 0.2in;
+  }
+
+  .proposal-contact {
+    margin-top: 0.38in;
+    padding: 0.35in;
+    page-break-inside: avoid;
+  }
+
+  .site-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: none;
+    padding: 0.28in 0 0;
+    margin-top: 0.25in;
+    border-top: 1px solid rgba(21, 61, 54, 0.14);
+    font-size: 8pt;
+  }
+}
