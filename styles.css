@@ -615,53 +615,52 @@ p {
 
 .moments-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(12px, 2vw, 20px);
-  align-items: end;
-  max-width: 860px;
+  align-items: start;
+  max-width: 720px;
   margin-left: auto;
 }
 
 .moment-card {
   position: relative;
-  grid-column: span 4;
   margin: 0;
   overflow: hidden;
   background: var(--mist);
 }
 
 .moment-card:nth-child(2) {
-  transform: translateY(-38px);
+  transform: none;
 }
 
 .moment-large {
-  grid-column: span 7;
+  grid-column: auto;
 }
 
 .moment-tall {
-  grid-column: span 5;
+  grid-column: auto;
 }
 
 .moment-wide {
-  grid-column: 5 / span 8;
-  margin-top: -18px;
+  grid-column: auto;
+  margin-top: 0;
 }
 
 .moment-card img {
   width: 100%;
   height: 100%;
-  min-height: 240px;
+  min-height: 0;
   object-fit: cover;
   filter: saturate(0.92) contrast(1.02);
 }
 
 .moment-large img {
-  aspect-ratio: 16 / 9.6;
+  aspect-ratio: 4 / 3.15;
   object-position: center;
 }
 
 .moment-tall img {
-  aspect-ratio: 4 / 4.75;
+  aspect-ratio: 4 / 3.15;
   object-position: 60% 28%;
 }
 
@@ -670,7 +669,7 @@ p {
 }
 
 .moment-wide img {
-  aspect-ratio: 16 / 8.2;
+  aspect-ratio: 4 / 3.15;
   object-position: 28% center;
 }
 
@@ -681,14 +680,14 @@ p {
   left: 0;
   display: grid;
   gap: 4px;
-  padding: 24px 22px 18px;
+  padding: 18px 16px 14px;
   color: var(--cream);
   background: linear-gradient(to top, rgba(12, 30, 27, 0.82), rgba(12, 30, 27, 0));
 }
 
 .moment-card strong {
   font-family: var(--serif);
-  font-size: 1.06rem;
+  font-size: 0.98rem;
   letter-spacing: 0.06em;
 }
 
@@ -2300,7 +2299,7 @@ p {
   }
 
   .proposal-theme-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.12in;
   }
 
@@ -2313,20 +2312,20 @@ p {
   }
 
   .proposal-theme p {
-    margin-bottom: 0.12in;
-    font-size: 8pt;
+    margin-bottom: 0.09in;
+    font-size: 7.4pt;
   }
 
   .proposal-theme h3 {
-    margin-bottom: 0.1in;
-    font-size: 13pt;
+    margin-bottom: 0.08in;
+    font-size: 10.8pt;
     line-height: 1.45;
   }
 
   .proposal-theme span,
   .value-item p,
   .proposal-credentials li {
-    font-size: 9pt;
+    font-size: 8.3pt;
     line-height: 1.65;
   }
 
