@@ -1728,10 +1728,45 @@ p {
   object-position: center;
 }
 
-.proposal-theme-list {
+.proposal-theme-list,
+.proposal-audience-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 14px;
+}
+
+.proposal-audience-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.audience-column {
+  display: grid;
+  grid-template-rows: auto repeat(3, 1fr);
+  gap: 12px;
+  padding: clamp(18px, 2.4vw, 24px);
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--cream) 72%, var(--paper));
+}
+
+.audience-heading {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.audience-heading p {
+  margin-bottom: 13px;
+  color: var(--clay);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.audience-heading h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
+  line-height: 1.48;
+  letter-spacing: 0.05em;
 }
 
 .proposal-theme {
@@ -1740,6 +1775,15 @@ p {
   padding: clamp(24px, 3vw, 34px);
   border: 1px solid var(--line);
   background: var(--cream);
+}
+
+.audience-column .proposal-theme {
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  min-height: 0;
+  padding: clamp(18px, 2.2vw, 24px);
+  background: var(--paper);
 }
 
 .proposal-theme:nth-child(-n + 3) {
@@ -1760,6 +1804,14 @@ p {
   font-size: clamp(1.28rem, 2vw, 1.65rem);
   line-height: 1.58;
   letter-spacing: 0.04em;
+}
+
+.proposal-theme h4 {
+  margin: 0 0 14px;
+  font-family: var(--serif);
+  font-size: clamp(1.04rem, 1.5vw, 1.22rem);
+  line-height: 1.55;
+  letter-spacing: 0.03em;
 }
 
 .proposal-theme span,
@@ -1883,6 +1935,14 @@ p {
     grid-column: span 3;
   }
 
+  .proposal-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-column {
+    grid-template-rows: auto;
+  }
+
   .work-card,
   .work-card:nth-child(-n + 3) {
     grid-column: auto;
@@ -1986,6 +2046,7 @@ p {
 
   .terra-visuals,
   .terra-programs,
+  .proposal-audience-grid,
   .proposal-summary,
   .proposal-theme-list,
   .value-grid,
@@ -1998,6 +2059,10 @@ p {
   .proposal-theme:nth-child(-n + 3) {
     grid-column: auto;
     min-height: 0;
+  }
+
+  .audience-column {
+    padding: 18px;
   }
 
   .site-footer {
@@ -2303,12 +2368,43 @@ p {
     gap: 0.12in;
   }
 
+  .proposal-audience-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.12in;
+    align-items: stretch;
+  }
+
+  .audience-column {
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 0.08in;
+    padding: 0.13in;
+    page-break-inside: avoid;
+  }
+
+  .audience-heading {
+    padding-bottom: 0.1in;
+  }
+
+  .audience-heading p {
+    margin-bottom: 0.08in;
+    font-size: 7.2pt;
+  }
+
+  .audience-heading h3 {
+    font-size: 12pt;
+    line-height: 1.35;
+  }
+
   .proposal-theme,
   .proposal-theme:nth-child(-n + 3) {
     grid-column: auto;
     min-height: 0;
     padding: 0.18in;
     page-break-inside: avoid;
+  }
+
+  .audience-column .proposal-theme {
+    padding: 0.12in;
   }
 
   .proposal-theme p {
@@ -2320,6 +2416,12 @@ p {
     margin-bottom: 0.08in;
     font-size: 10.8pt;
     line-height: 1.45;
+  }
+
+  .proposal-theme h4 {
+    margin-bottom: 0.07in;
+    font-size: 9.5pt;
+    line-height: 1.42;
   }
 
   .proposal-theme span,
