@@ -1764,6 +1764,18 @@ p {
   margin-top: 18px;
 }
 
+.emotional-agility-summary {
+  margin: 26px 0 24px;
+}
+
+.emotional-agility-summary img {
+  display: block;
+  width: min(100%, 980px);
+  height: auto;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 42px rgba(52, 46, 37, 0.08);
+}
+
 .proposal-podcast-brief {
   margin-top: 28px;
   padding: clamp(20px, 3vw, 28px);
