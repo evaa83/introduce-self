@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=hosting-small-grid">
+    <link rel="stylesheet" href="styles.css?v=topic-order-20260914">
+    <link rel="stylesheet" href="home.css?v=editorial-20260914">
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="home-page">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="回到首頁">
         <span class="brand-mark">江宜汾</span>
@@ -22,9 +23,10 @@
         <span class="sr-only">開啟選單</span>
       </button>
       <nav class="primary-nav" id="primary-nav" aria-label="主要導覽">
-        <a href="#parents">ARC 家長圈</a>
         <a href="#podcast">無邊界學習</a>
         <a href="#terra">泰拉學校</a>
+        <a href="#parents">ARC 家長圈</a>
+        <a href="#workshop">情緒靈敏力工作坊</a>
         <a href="#teaching">課程與演講</a>
         <a href="proposal.html">短講提案</a>
         <a href="#profile">學經歷與證照</a>
@@ -46,9 +48,9 @@
           </div>
         </div>
         <div class="hero-portrait reveal">
-          <img src="工作照片/五明上課照片.jpg" alt="江宜汾帶領學生進行課堂討論">
+          <img src="工作照片/五明上課照片.jpg" alt="江宜汾帶領學生進行課堂討論" width="4032" height="3024" fetchpriority="high">
           <div class="portrait-card">
-            <img class="portrait-avatar" src="工作照片/個人照.jpg" alt="">
+            <img class="portrait-avatar" src="工作照片/個人照.jpg" alt="" width="270" height="319">
             <p>江宜汾</p>
             <strong>教育工作者</strong>
             <span>1221 未來教育發展協會<br>創會理事長</span>
@@ -75,113 +77,189 @@
         </div>
       </section>
 
-      <section class="section profile" id="profile">
-        <div class="section-title reveal">
-          <p class="overline">BACKGROUND</p>
-          <h2>從新聞現場、<br>品牌行動到教育陪伴，<br>累積跨界視角。</h2>
+      <section class="podcast" id="podcast">
+        <div class="podcast-copy reveal">
+          <p class="overline">01 / PODCAST</p>
+          <h2 class="topic-title">無邊界學習</h2>
+          <p class="podcast-lead">與好好聽共同製作，累積超過 100 集的教育對話。</p>
+          <p>從教室、家庭到未來社會，透過訪談與思辨，讓更多人看見學習可以發生的不同方式。精選短影音同步分享於 1221 未來教育發展協會 Facebook。</p>
+          <div class="button-row">
+            <a class="button light" href="https://www.provoice.tw/podcast/show?id=f06c86f3-080a-40a9-8164-56e6d4a44e2d" target="_blank" rel="noopener">前往收聽節目</a>
+            <a class="text-link" href="https://www.facebook.com/1221feda/reels/?locale=zh_TW" target="_blank" rel="noopener">觀看短影音</a>
+            <a class="text-link" href="https://1221.org.tw/" target="_blank" rel="noopener">協會網站</a>
+          </div>
+
         </div>
-        <div class="profile-grid">
-          <article class="profile-card reveal">
-            <p class="profile-label">Experience</p>
-            <ul>
-              <li>中國電視公司新聞部主播、專題組 / 財經組組長、文字記者</li>
-              <li>「小資賺大錢」「進擊大未來」節目製作人與主持人</li>
-              <li>活動主持與典禮司儀</li>
-              <li>中國電視公司業務部整合行銷部經理</li>
-              <li>青滷蔬食煮餐廳創辦人</li>
-              <li>華砇實驗教育機構、LIA 五明國際學苑、展賦行動學苑教師</li>
-              <li>荒野保護協會氣候變遷委員會循環零廢棄小組講師</li>
-              <li>致理科技大學兼任講師</li>
-              <li>長庚醫學大學兼任講師</li>
-            </ul>
-          </article>
-          <article class="profile-card reveal">
-            <p class="profile-label">Education</p>
-            <ul>
-              <li>Oxford Brookes University, MA in Electronic Media</li>
-              <li>國立政治大學外交學系</li>
-            </ul>
-          </article>
-          <div class="profile-media reveal" aria-label="新聞主播與節目製作主持人的媒體經歷">
-            <figure class="profile-photo">
-              <img src="工作照片/主播照.jpg" alt="江宜汾於中國電視公司擔任新聞主播">
-              <figcaption>
-                <strong>新聞主播</strong>
-                <span>中視新聞主播台，訓練即時判斷、現場掌握與清楚表達。</span>
-              </figcaption>
+        <div class="audio-display reveal" aria-label="無邊界學習錄音工作照">
+          <div class="audio-title">
+            <span class="live-dot"></span>
+            <span>好好聽 FM 錄音現場</span>
+          </div>
+          <div class="audio-feature">
+            <img src="工作照片/phoebe.jpg" alt="江宜汾與無邊界學習受訪者於好好聽 FM 合影" loading="lazy" width="1477" height="1108">
+          </div>
+
+        </div>
+        <div class="podcast-gallery reveal">
+          <p class="overline">對話現場 / CONVERSATIONS</p>
+          <div class="guest-gallery" aria-label="無邊界學習訪談來賓合照">
+            <figure>
+              <img src="工作照片/溫怡玲無邊界學習.jpeg" alt="江宜汾與無邊界學習受訪者於好好聽 FM 合影" loading="lazy" width="5712" height="4284">
+              <figcaption>與受訪者的教育對話</figcaption>
             </figure>
-            <figure class="profile-photo">
-              <img src="工作照片/sddefault.jpeg" alt="江宜汾擔任電視節目製作人與主持人">
-              <figcaption>
-                <strong>節目製作與主持</strong>
-                <span>從議題設定、內容製作到鏡頭前主持，累積媒體敘事經驗。</span>
-              </figcaption>
+            <figure>
+              <img src="工作照片/萬叔無邊界學習.jpg" alt="江宜汾與無邊界學習受訪者於錄音現場合影" loading="lazy" width="4032" height="3024">
+              <figcaption>每一次訪談，打開新的學習視角</figcaption>
             </figure>
+          </div>
+        </div>
+        <div class="podcast-shorts reveal">
+          <div class="reels-heading">
+            <span>FEATURED SHORTS</span>
+            <p>精選短影音</p>
+          </div>
+          <div class="short-video-grid">
+            <article class="short-video">
+              <video controls playsinline preload="metadata" poster="短影音封面/ep25.png" aria-label="無邊界學習 EP25 精選短影音">
+                <source src="ep25短視頻.mp4" type="video/mp4">
+                您的瀏覽器無法播放這段影片。
+              </video>
+              <p>01</p>
+              <h3>EP25｜無邊界學習</h3>
+            </article>
+            <article class="short-video">
+              <video controls playsinline preload="metadata" poster="短影音封面/黃志順-ep18.png" aria-label="無邊界學習 EP18 訪問黃志順">
+                <source src="黃志順-ep18短視頻.mp4" type="video/mp4">
+                您的瀏覽器無法播放這段影片。
+              </video>
+              <p>02</p>
+              <h3>EP18｜訪問黃志順</h3>
+            </article>
+          </div>
+          <div class="reel-more">
+            <span>更多短影音</span>
+            <a href="https://www.facebook.com/reel/3087867011361282?locale=zh_TW" target="_blank" rel="noopener">精選連結 01</a>
+            <a href="https://www.facebook.com/reel/1065139482392105?locale=zh_TW" target="_blank" rel="noopener">精選連結 02</a>
           </div>
         </div>
       </section>
 
-      <section class="section media-moments" id="media-moments">
-        <div class="section-title reveal">
-          <p class="overline">MEDIA / HOSTING</p>
-          <h2>從活動現場<br>到舞台主持，<br>連結群眾掌控現場。</h2>
+      <section class="terra" id="terra">
+        <div class="terra-header reveal">
+          <img class="terra-logo" src="泰拉素材/terra-logo.jpg" alt="Terra School 泰拉學校 logo" loading="lazy" width="1220" height="864">
+          <p class="overline">02 / TERRA SCHOOL</p>
+          <h2 class="topic-title">泰拉學校</h2>
+          <p class="terra-tagline">以自然為師，向地球學習。</p>
+          <p>泰拉學校是一所沒有圍牆的學校，帶領學習者走進田野、山林與海岸，從體驗中覺察自己、理解他人，並回應真實世界的問題。</p>
+          <div class="terra-actions">
+            <a class="button light" href="https://terrahan.tw" target="_blank" rel="noopener">前往泰拉學校官網</a>
+            <a class="button outline-light" href="https://terrahan.tw" target="_blank" rel="noopener">查看活動內容</a>
+          </div>
         </div>
-        <div class="moments-grid" aria-label="江宜汾活動主持照片">
-          <figure class="moment-card moment-large reveal">
-            <img src="工作照片/12311346_791145014363970_659769746_o.jpg" alt="江宜汾擔任中小企業創造價值趨勢論壇主持人">
-            <figcaption>
-              <strong>論壇主持</strong>
-              <span>中小企業創造價值趨勢論壇，掌握議程節奏與現場交流。</span>
-            </figcaption>
+        <div class="terra-visuals reveal" aria-label="泰拉學校自然場域照片">
+          <figure class="terra-visual-main">
+            <img src="泰拉素材/terra-sugarcane.jpg" width="1400" height="1050" loading="lazy" alt="台日學生在阿聰自然田合力體驗砍甘蔗後合影">
+            <figcaption>阿聰自然田：台日學生合力體驗砍甘蔗。</figcaption>
           </figure>
-          <figure class="moment-card moment-tall reveal">
-            <img src="工作照片/桃園之夜主持.jpeg" alt="江宜汾擔任桃園之夜活動主持">
-            <figcaption>
-              <strong>活動主持</strong>
-              <span>典禮、論壇與活動現場的節奏掌握。</span>
-            </figcaption>
-          </figure>
-          <figure class="moment-card moment-wide reveal">
-            <img src="工作照片/S__41795670.jpg" alt="江宜汾擔任 TEDx 林口講座主持人">
-            <figcaption>
-              <strong>講座主持</strong>
-              <span>TEDx 林口主持人，陪伴觀點在舞台上被看見。</span>
-            </figcaption>
-          </figure>
+        </div>
+        <figure class="terra-pillars reveal" aria-label="泰拉學校三大核心：體驗自然、覺察自我、理解創造，交會於泰拉">
+          <img src="泰拉素材/terra-venns-color-transparent.png" alt="泰拉學校三大核心 Venn 圖：體驗自然、覺察自我、理解創造，交會於泰拉" loading="lazy" width="1254" height="1254">
+          <figcaption class="sr-only">泰拉學校以體驗自然、覺察自我與理解創造作為三大核心，三者交會成為泰拉的學習方法。</figcaption>
+        </figure>
+        <div class="terra-programs">
+          <article class="program active reveal">
+            <img src="泰拉素材/terra-lotus-harvest.jpg" alt="地之校學員於水月農莊走進蓮田體驗採蓮蓬" loading="lazy" width="4032" height="3024">
+            <p>01 / EARTH</p>
+            <h3>地之校</h3>
+            <span>農村・食農・地方共創</span>
+            <p>走進土地與生產現場，理解農業、生活和地方關係，已展開 2026 成果整理。</p>
+          </article>
+          <article class="program reveal">
+            <img src="泰拉素材/terra-sky.jpg" alt="高山與雲海代表照" loading="lazy" width="3000" height="2000">
+            <p>02 / SKY</p>
+            <h3>天之校</h3>
+            <span>高山・步行・山旅共生</span>
+            <p>以五日高山移動學習為核心，在高度、氣候與團隊協作中練習判斷。</p>
+          </article>
+          <article class="program reveal">
+            <img src="泰拉素材/terra-ocean.jpg" alt="海洋與沿岸代表照" loading="lazy" width="6240" height="4160">
+            <p>03 / OCEAN</p>
+            <h3>海之校</h3>
+            <span>海洋・沿岸・水域行動</span>
+            <p>從沿岸與海洋環境出發，觀察水域生態和人類生活，作為籌備中的未來系列。</p>
+          </article>
         </div>
       </section>
 
-      <section class="section credentials" id="credentials">
+      <section class="section parents" id="parents">
+        <div class="parents-gallery reveal">
+          <img src="家長會/arc-parent-circle.jpg" alt="ARC 家長圈學員在課堂中書寫與探索內在自我" loading="lazy" width="1400" height="1050">
+          <div class="gallery-caption">
+            <p>陪伴並不是完美解答，</p>
+            <strong>而是穩定地在場。</strong>
+          </div>
+        </div>
+        <div class="parents-copy">
+          <div class="reveal">
+            <p class="overline">03 / PARENT CIRCLE</p>
+            <h2 class="topic-title">ARC 家長圈</h2>
+            <p class="lead">孩子成長的路上，家長也值得被理解與支持。</p>
+            <p>六週引導歷程，每週一次、每次兩小時，陪伴家長從看見自己開始，在理解與接納中，建立更穩定的家庭支持力量。</p>
+          </div>
+          <div class="parent-themes reveal">
+            <p>看見自己的狀態與需要</p>
+            <p>理解情緒與親子互動</p>
+            <p>練習穩定而清楚的陪伴</p>
+            <p>建立家庭支持力量</p>
+          </div>
+
+        </div>
+        <div class="parents-details">
+          <div class="recode-note reveal">
+            <p class="recode-label">ARC × RECODE</p>
+            <h3>從自動反應，回到有選擇的陪伴。</h3>
+            <p>在 ARC 家長圈裡，我們不只處理孩子的行為，也陪家長看見自己被觸發的瞬間：內在需要、核心恐懼、舊有劇本與信念如何推動控制、焦慮或說教。透過 RECODE 的整理，家長能重新理解自己的反應，練習把舊模式改寫成更清楚、更穩定的親子互動。</p>
+          </div>
+          <div class="registration reveal">
+            <img class="registration-qr" src="家長會/parentscircle.png" alt="掃描 QR code 登記 ARC 家長圈參與意願" loading="lazy" width="910" height="958">
+            <div>
+              <h3>登記參與意願</h3>
+              <p>集滿 6 至 8 位有意願的家長後，將協調適合大家的上課時間。</p>
+              <div class="parent-actions">
+                <a class="button primary" href="https://evaa83.github.io/parents/arc-parent-circle-site/" target="_blank" rel="noopener">查看 ARC 家長圈完整網頁</a>
+              </div>
+              <p class="scan-note">請使用手機掃描 QR code 填寫意願登記</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section emotional-workshop" id="workshop" aria-labelledby="workshop-title">
         <div class="section-title reveal">
-          <p class="overline">CREDENTIALS</p>
-          <h2>把人的內在、<br>學習與行動，<br>放在同一張地圖裡。</h2>
+          <p class="overline">04 / EMOTIONAL AGILITY</p>
+          <h2 class="topic-title" id="workshop-title">情緒靈敏力工作坊</h2>
         </div>
         <div class="credential-showcase">
           <article class="credential-card credential-feature reveal">
-            <img src="證照照片/emotional-agility-2026.jpg" alt="Emotional Agility Certified Facilitator certificate">
+            <img src="證照照片/emotional-agility-2026.jpg" alt="Emotional Agility Certified Facilitator certificate" loading="lazy" width="1980" height="1530">
             <p class="credential-number">01</p>
             <h3>Emotional Agility Certified Facilitator</h3>
             <p class="credential-zh">情緒靈敏力認證引導師</p>
             <span>Developed by Susan David, Ph.D. / 2026</span>
           </article>
-          <article class="credential-card reveal">
-            <img src="證照照片/emergenetics-youth-facilitator-upright.jpg" alt="Emergenetics Certified Youth Facilitator certificate">
-            <p class="credential-number">02</p>
-            <h3>Emergenetics Certified Youth Facilitator</h3>
-            <p class="credential-zh">全腦思維偏好青少年認證引導師</p>
-            <span>Emergenetics International / 2025</span>
+          <article class="credential-course reveal" aria-labelledby="hooked-title">
+            <p class="overline">EMOTIONAL AGILITY WORKSHOP</p>
+            <h3 id="hooked-title">HOOKED｜從自動反應到心理僵化</h3>
+            <p class="credential-course-meta">3 小時核心工作坊 · 徐柏峯 × 江宜汾</p>
+            <p>透過雙講師引導、個案剖析與實作，在刺激與反應之間找回選擇回應的空間。</p>
+            <ul>
+              <li><strong>覺察自動反應：</strong>辨識大腦如何快速下結論，看見自己的慣性與防衛。</li>
+              <li><strong>練習現實檢核：</strong>區分客觀事實與主觀詮釋，鬆開習慣性的腦補。</li>
+              <li><strong>看見團隊盲點：</strong>理解個人防衛如何影響溝通、部門協作與組織決策。</li>
+              <li><strong>帶走日常微練習：</strong>運用心智暫停、呼吸定錨，在高壓情境中練習回應。</li>
+            </ul>
+            <a class="button primary" href="hooked-workshop.html" target="_blank" rel="noopener">查看完整課程大綱 ↗</a>
           </article>
-        </div>
-        <div class="credential-list reveal" aria-label="其他證照與資格">
-          <h3>Other Certifications & Qualifications</h3>
-          <ul>
-            <li><strong>Emotional Aromatherapy Practitioner</strong><span>情緒芳療師認證</span></li>
-            <li><strong>Industrial Sustainability ESG Advanced Strategy Class</strong><span>產業永續 ESG 高階策略班 / 2022</span></li>
-            <li><strong>Social Innovation Sustainable Management Incubation Program</strong><span>社會創新永續經營管理孵化班 / 2024</span></li>
-            <li><strong>Access Bars Practitioner</strong><span>Access Bars 執行師</span></li>
-            <li><strong>Usui Reiki First Degree</strong><span>臼井靈氣一階</span></li>
-            <li><strong>PerFume Class Certificate</strong><span>調香課程結業證書 / Korea Design Craft Association</span></li>
-          </ul>
         </div>
       </section>
 
@@ -192,14 +270,14 @@
           <p>課程結合媒體理解、批判思考與真實任務，讓學生從自己的經驗出發，逐步發展出能被聽見的觀點。</p>
           <div class="teaching-gallery">
             <figure class="teaching-photo feature">
-              <img src="工作照片/展賦上課.jpg" alt="江宜汾於展賦行動學苑與五明國際學苑共同課程授課">
+              <img src="工作照片/展賦上課.jpg" alt="江宜汾於展賦行動學苑與五明國際學苑共同課程授課" loading="lazy" width="1065" height="800">
               <figcaption>
                 <strong>傳播與溝通</strong>
                 <span>展賦行動學苑 / 五明國際學苑</span>
               </figcaption>
             </figure>
             <figure class="teaching-photo interview">
-              <img src="工作照片/上課照片1.jpg" alt="江宜汾帶領學生理解新聞採訪與媒體觀點">
+              <img src="工作照片/上課照片1.jpg" alt="江宜汾帶領學生理解新聞採訪與媒體觀點" loading="lazy" width="1477" height="1108">
               <figcaption>
                 <strong>採訪與傳播</strong>
                 <span>課堂現場</span>
@@ -271,173 +349,119 @@
         </div>
         <div class="speaking-visuals reveal">
           <figure class="speaking-photo">
-            <img src="工作照片/演講照片.jpg" alt="江宜汾進行教育主題演講的現場照片">
+            <img src="工作照片/演講照片.jpg" alt="江宜汾進行教育主題演講的現場照片" loading="lazy" width="1706" height="960">
             <figcaption>教育與親職主題演講現場</figcaption>
           </figure>
           <figure class="speaking-photo">
-            <img src="工作照片/6088655.jpg" alt="江宜汾分享卸下主播光環、挺過創業路的演講現場">
+            <img src="工作照片/6088655.jpg" alt="江宜汾分享卸下主播光環、挺過創業路的演講現場" loading="lazy" width="1442" height="1136">
             <figcaption>創業與人生轉折主題演講</figcaption>
           </figure>
           <figure class="speaking-poster">
-            <img src="演講海報.jpg" alt="陪孩子找到方向，一起走向未來的光演講海報">
+            <img src="演講海報.jpg" alt="陪孩子找到方向，一起走向未來的光演講海報" loading="lazy" width="1055" height="1491">
           </figure>
         </div>
       </section>
 
-      <section class="podcast" id="podcast">
-        <div class="podcast-copy reveal">
-          <p class="overline">PODCAST</p>
-          <h2>無邊界學習</h2>
-          <p class="podcast-lead">與好好聽共同製作，累積超過 100 集的教育對話。</p>
-          <p>從教室、家庭到未來社會，透過訪談與思辨，讓更多人看見學習可以發生的不同方式。精選短影音同步分享於 1221 未來教育發展協會 Facebook。</p>
-          <div class="button-row">
-            <a class="button light" href="https://www.provoice.tw/podcast/show?id=f06c86f3-080a-40a9-8164-56e6d4a44e2d" target="_blank" rel="noopener">前往收聽節目</a>
-            <a class="text-link" href="https://www.facebook.com/1221feda/reels/?locale=zh_TW" target="_blank" rel="noopener">觀看短影音</a>
-            <a class="text-link" href="https://1221.org.tw/" target="_blank" rel="noopener">協會網站</a>
-          </div>
-          <div class="guest-gallery" aria-label="無邊界學習訪談來賓合照">
-            <figure>
-              <img src="工作照片/溫怡玲無邊界學習.jpeg" alt="江宜汾與無邊界學習受訪者於好好聽 FM 合影">
-              <figcaption>與受訪者的教育對話</figcaption>
-            </figure>
-            <figure>
-              <img src="工作照片/萬叔無邊界學習.jpg" alt="江宜汾與無邊界學習受訪者於錄音現場合影">
-              <figcaption>每一次訪談，打開新的學習視角</figcaption>
-            </figure>
-          </div>
+      <section class="section media-moments" id="media-moments">
+        <div class="section-title reveal">
+          <p class="overline">MEDIA / HOSTING</p>
+          <h2>從活動現場到舞台主持，<br>連結群眾，掌控現場。</h2>
         </div>
-        <div class="audio-display reveal" aria-label="無邊界學習錄音工作照">
-          <div class="audio-title">
-            <span class="live-dot"></span>
-            <span>好好聽 FM 錄音現場</span>
-          </div>
-          <div class="audio-feature">
-            <img src="工作照片/錄音側錄.jpg" alt="江宜汾錄製無邊界學習 Podcast 的現場照片">
-          </div>
-          <div class="reels-heading">
-            <span>FEATURED SHORTS</span>
-            <p>精選短影音</p>
-          </div>
-          <div class="short-video-grid">
-            <article class="short-video">
-              <video controls playsinline preload="metadata" poster="短影音封面/圓臉貓-首格.jpg" aria-label="訪問生態老師圓臉貓">
-                <source src="圓臉貓.mp4" type="video/mp4">
-                您的瀏覽器無法播放這段影片。
-              </video>
-              <p>01</p>
-              <h3>訪問生態老師圓臉貓</h3>
-            </article>
-            <article class="short-video">
-              <video controls playsinline preload="metadata" poster="短影音封面/何明彦-首格.jpg" aria-label="訪問台灣創意工場何明彦">
-                <source src="何明彦.MP4" type="video/mp4">
-                您的瀏覽器無法播放這段影片。
-              </video>
-              <p>02</p>
-              <h3>訪問台灣創意工場何明彦</h3>
-            </article>
-          </div>
-          <div class="reel-more">
-            <span>更多短影音</span>
-            <a href="https://www.facebook.com/reel/3087867011361282?locale=zh_TW" target="_blank" rel="noopener">精選連結 01</a>
-            <a href="https://www.facebook.com/reel/1065139482392105?locale=zh_TW" target="_blank" rel="noopener">精選連結 02</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section parents" id="parents">
-        <div class="parents-gallery reveal">
-          <img src="家長會/IMG_6838%201.JPG" alt="ARC 家長圈學員正在進行小組交流">
-          <div class="gallery-caption">
-            <p>陪伴並不是完美解答，</p>
-            <strong>而是穩定地在場。</strong>
-          </div>
-        </div>
-        <div class="parents-copy">
-          <div class="reveal">
-            <p class="overline">PARENT CIRCLE</p>
-            <h2>ARC 家長圈</h2>
-            <p class="lead">孩子成長的路上，家長也值得被理解與支持。</p>
-            <p>六週引導歷程，每週一次、每次兩小時，陪伴家長從看見自己開始，在理解與接納中，建立更穩定的家庭支持力量。</p>
-          </div>
-          <div class="parent-themes reveal">
-            <p>看見自己的狀態與需要</p>
-            <p>理解情緒與親子互動</p>
-            <p>練習穩定而清楚的陪伴</p>
-            <p>建立家庭支持力量</p>
-          </div>
-          <div class="recode-note reveal">
-            <p class="recode-label">ARC × RECODE</p>
-            <h3>從自動反應，回到有選擇的陪伴。</h3>
-            <p>在 ARC 家長圈裡，我們不只處理孩子的行為，也陪家長看見自己被觸發的瞬間：內在需要、核心恐懼、舊有劇本與信念如何推動控制、焦慮或說教。透過 RECODE 的整理，家長能重新理解自己的反應，練習把舊模式改寫成更清楚、更穩定的親子互動。</p>
-          </div>
-          <div class="registration reveal">
-            <img class="registration-qr" src="家長會/parentscircle.png" alt="掃描 QR code 登記 ARC 家長圈參與意願">
-            <div>
-              <h3>登記參與意願</h3>
-              <p>集滿 6 至 8 位有意願的家長後，將協調適合大家的上課時間。</p>
-              <div class="parent-actions">
-                <a class="button primary" href="https://evaa83.github.io/parents/arc-parent-circle-site/" target="_blank" rel="noopener">查看 ARC 家長圈完整網頁</a>
-              </div>
-              <p class="scan-note">請使用手機掃描 QR code 填寫意願登記</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="line-banner reveal" aria-label="LINE 官方帳號">
-        <div>
-          <p class="overline">LINE OFFICIAL ACCOUNT</p>
-          <h2>加入 LINE，收到家長支持與教育活動資訊</h2>
-        </div>
-        <div class="line-actions">
-          <img class="line-qr" src="konyaline.png" alt="掃描 QR code 加入江宜汾 LINE 官方帳號">
-          <p>掃描 QR code<br>加入好友</p>
-        </div>
-      </aside>
-
-      <section class="terra" id="terra">
-        <div class="terra-header reveal">
-          <img class="terra-logo" src="泰拉素材/terra-logo.jpg" alt="Terra School 泰拉學校 logo">
-          <p class="overline">TERRA SCHOOL</p>
-          <h2>以自然為師，<br>向地球學習。</h2>
-          <p>泰拉學校是一所沒有圍牆的學校，帶領學習者走進田野、山林與海岸，從體驗中覺察自己、理解他人，並回應真實世界的問題。</p>
-          <div class="terra-actions">
-            <a class="button light" href="https://terrahan.tw" target="_blank" rel="noopener">前往泰拉學校官網</a>
-            <a class="button outline-light" href="https://terrahan.tw" target="_blank" rel="noopener">查看活動內容</a>
-          </div>
-        </div>
-        <div class="terra-visuals reveal" aria-label="泰拉學校自然場域照片">
-          <figure class="terra-visual-main">
-            <img src="泰拉素材/terra-field-team.jpg" alt="泰拉學校學員走進蓮田與稻田進行田野學習">
-            <figcaption>泰拉學校現場：走進真實場域，在自然、地方與團隊中學習。</figcaption>
+        <div class="moments-grid" aria-label="江宜汾活動主持照片">
+          <figure class="moment-card moment-large reveal">
+            <img src="工作照片/12311346_791145014363970_659769746_o.jpg" alt="江宜汾擔任中小企業創造價值趨勢論壇主持人" loading="lazy" width="2001" height="1126">
+            <figcaption>
+              <strong>論壇主持</strong>
+              <span>中小企業創造價值趨勢論壇，掌握議程節奏與現場交流。</span>
+            </figcaption>
+          </figure>
+          <figure class="moment-card moment-tall reveal">
+            <img src="工作照片/桃園之夜主持.jpeg" alt="江宜汾擔任桃園之夜活動主持" loading="lazy" width="2316" height="3088">
+            <figcaption>
+              <strong>活動主持</strong>
+              <span>典禮、論壇與活動現場的節奏掌握。</span>
+            </figcaption>
+          </figure>
+          <figure class="moment-card moment-wide reveal">
+            <img src="工作照片/S__41795670.jpg" alt="江宜汾擔任 TEDx 林口講座主持人" loading="lazy" width="1109" height="1479">
+            <figcaption>
+              <strong>講座主持</strong>
+              <span>TEDx 林口主持人，陪伴觀點在舞台上被看見。</span>
+            </figcaption>
           </figure>
         </div>
-        <figure class="terra-pillars reveal" aria-label="泰拉學校三大核心：體驗自然、覺察自我、理解創造，交會於泰拉">
-          <img src="泰拉素材/terra-venns-color-transparent.png" alt="泰拉學校三大核心 Venn 圖：體驗自然、覺察自我、理解創造，交會於泰拉">
-          <figcaption class="sr-only">泰拉學校以體驗自然、覺察自我與理解創造作為三大核心，三者交會成為泰拉的學習方法。</figcaption>
-        </figure>
-        <div class="terra-programs">
-          <article class="program active reveal">
-            <img src="泰拉素材/terra-earth-field.jpg" alt="田野與食農教育場域">
-            <p>01 / EARTH</p>
-            <h3>地之校</h3>
-            <span>農村・食農・地方共創</span>
-            <p>走進土地與生產現場，理解農業、生活和地方關係，已展開 2026 成果整理。</p>
+      </section>
+
+      <section class="section profile" id="profile">
+        <div class="section-title reveal">
+          <p class="overline">BACKGROUND</p>
+          <h2>從新聞現場到教育陪伴，<br>累積跨界視角。</h2>
+        </div>
+        <div class="profile-grid">
+          <article class="profile-card reveal">
+            <p class="profile-label">Experience</p>
+            <ul>
+              <li>中國電視公司新聞部主播、專題組 / 財經組組長、文字記者</li>
+              <li>「小資賺大錢」「進擊大未來」節目製作人與主持人</li>
+              <li>活動主持與典禮司儀</li>
+              <li>中國電視公司業務部整合行銷部經理</li>
+              <li>青滷蔬食煮餐廳創辦人</li>
+              <li>華砇實驗教育機構、LIA 五明國際學苑、展賦行動學苑教師</li>
+              <li>荒野保護協會氣候變遷委員會循環零廢棄小組講師</li>
+              <li>致理科技大學兼任講師</li>
+              <li>長庚醫學大學兼任講師</li>
+            </ul>
           </article>
-          <article class="program reveal">
-            <img src="泰拉素材/terra-sky.jpg" alt="高山與雲海代表照">
-            <p>02 / SKY</p>
-            <h3>天之校</h3>
-            <span>高山・步行・山旅共生</span>
-            <p>以五日高山移動學習為核心，在高度、氣候與團隊協作中練習判斷。</p>
+          <article class="profile-card reveal">
+            <p class="profile-label">Education</p>
+            <ul>
+              <li>Oxford Brookes University, MA in Electronic Media</li>
+              <li>國立政治大學外交學系</li>
+            </ul>
           </article>
-          <article class="program reveal">
-            <img src="泰拉素材/terra-ocean.jpg" alt="海洋與沿岸代表照">
-            <p>03 / OCEAN</p>
-            <h3>海之校</h3>
-            <span>海洋・沿岸・水域行動</span>
-            <p>從沿岸與海洋環境出發，觀察水域生態和人類生活，作為籌備中的未來系列。</p>
+          <div class="profile-media reveal" aria-label="新聞主播與節目製作主持人的媒體經歷">
+            <figure class="profile-photo">
+              <img src="工作照片/主播照.jpg" alt="江宜汾於中國電視公司擔任新聞主播" loading="lazy" width="1200" height="800">
+              <figcaption>
+                <strong>新聞主播</strong>
+                <span>中視新聞主播台，訓練即時判斷、現場掌握與清楚表達。</span>
+              </figcaption>
+            </figure>
+            <figure class="profile-photo">
+              <img src="工作照片/sddefault.jpeg" alt="江宜汾擔任電視節目製作人與主持人" loading="lazy" width="640" height="480">
+              <figcaption>
+                <strong>節目製作與主持</strong>
+                <span>從議題設定、內容製作到鏡頭前主持，累積媒體敘事經驗。</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials" id="credentials">
+        <div class="section-title reveal">
+          <p class="overline">CREDENTIALS</p>
+          <h2>把人的內在、學習與行動，<br>放在同一張地圖裡。</h2>
+        </div>
+        <div class="credential-showcase">
+          <article class="credential-card credential-secondary reveal">
+            <img src="證照照片/emergenetics-youth-facilitator-upright.jpg" alt="Emergenetics Certified Youth Facilitator certificate" loading="lazy" width="3024" height="4032">
+            <p class="credential-number">02</p>
+            <h3>Emergenetics Certified Youth Facilitator</h3>
+            <p class="credential-zh">全腦思維偏好青少年認證引導師</p>
+            <span>Emergenetics International / 2025</span>
           </article>
+        <div class="credential-list reveal" aria-label="其他證照與資格">
+          <h3>Other Certifications & Qualifications</h3>
+          <ul>
+            <li><strong>Emotional Aromatherapy Practitioner</strong><span>情緒芳療師認證</span></li>
+            <li><strong>Industrial Sustainability ESG Advanced Strategy Class</strong><span>產業永續 ESG 高階策略班 / 2022</span></li>
+            <li><strong>Social Innovation Sustainable Management Incubation Program</strong><span>社會創新永續經營管理孵化班 / 2024</span></li>
+            <li><strong>Access Bars Practitioner</strong><span>Access Bars 執行師</span></li>
+            <li><strong>Usui Reiki First Degree</strong><span>臼井靈氣一階</span></li>
+            <li><strong>PerFume Class Certificate</strong><span>調香課程結業證書 / Korea Design Craft Association</span></li>
+          </ul>
+        </div>
         </div>
       </section>
 
@@ -466,6 +490,23 @@
         <a href="https://terrahan.tw" target="_blank" rel="noopener">泰拉學校地之校</a>
       </div>
       <p class="copyright">Website draft / 2026</p>
+      <aside class="footer-line" aria-labelledby="footer-line-title">
+        <div>
+          <p class="overline">LINE</p>
+          <h2 id="footer-line-title">有關家長與生活的最新分享</h2>
+          <p>使用 LINE 掃描 QR Code，加入好友。</p>
+        </div>
+        <div class="footer-line-accounts">
+          <figure class="footer-line-account">
+            <img src="konyaline.png" width="180" height="180" loading="lazy" alt="ARC 家長圈 LINE 加好友 QR Code">
+            <figcaption>ARC 家長圈 LINE</figcaption>
+          </figure>
+          <figure class="footer-line-account">
+            <img src="eva-line-qrcode.jpg" width="180" height="180" loading="lazy" alt="C+江宜汾的播報台 LINE 加好友 QR Code">
+            <figcaption>C+江宜汾的播報台 LINE</figcaption>
+          </figure>
+        </div>
+      </aside>
     </footer>
   </body>
 </html>
