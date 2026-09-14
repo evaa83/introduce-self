@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOOKED｜從自動反應到心理僵化 — 3小時情緒敏捷核心工作坊企劃案 (雙講師專業版)</title>
+    <!-- Google Fonts: Noto Serif TC for editorial titles + Noto Sans TC for readable body + Outfit for metrics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;600;700;900&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-canvas: #f7f5f0;        /* 頂級溫潤紙張米色 */
+            --bg-card: #ffffff;
+            --bg-subtle: #f0eee8;
+            --bg-dark: #0f2420;          /* 英國牛津墨綠/深森林炭色 */
+            --text-main: #18181b;        /* 墨黑 */
+            --text-muted: #52525b;
+            --text-light: #71717a;
+            --border-hairline: rgba(24, 24, 27, 0.10);
+            --border-dark: rgba(255, 255, 255, 0.15);
+            --accent-teal: #0d5c52;
+            --accent-teal-light: #e6f3f1;
+            --accent-terracotta: #a84218;
+            --accent-terracotta-bg: #fbf0eb;
+            --accent-gold: #c28830;
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.03);
+            --shadow-float: 0 16px 36px -8px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-canvas);
+            color: var(--text-main);
+            line-height: 1.85;
+            font-size: 16px;
+            letter-spacing: 0.015em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .serif {
+            font-family: 'Noto Serif TC', Georgia, serif;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 28px 100px;
+        }
+
+        /* UTILITY PRINT BAR */
+        .utility-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 22px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-hairline);
+            border-radius: 999px;
+            margin-bottom: 44px;
+        }
+
+        .utility-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .utility-brand img {
+            height: 38px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .utility-badge {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--accent-teal);
+            background: var(--accent-teal-light);
+            padding: 4px 12px;
+            border-radius: 999px;
+            text-transform: uppercase;
+        }
+
+        .btn-print {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: transparent;
+            border: 1px solid var(--border-hairline);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-print:hover {
+            background: #ffffff;
+            color: var(--text-main);
+            border-color: #a1a1aa;
+        }
+
+        /* HERO EDITORIAL SECTION */
+        .hero {
+            text-align: center;
+            padding: 10px 0 28px;
+        }
+
+        .hero-pretitle {
+            font-size: 13.5px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            color: var(--accent-terracotta);
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            display: inline-block;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 4.8vw, 48px);
+            font-weight: 900;
+            line-height: 1.32;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span.break {
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(18px, 2.4vw, 22px);
+            font-weight: 600;
+            color: var(--accent-teal);
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
+
+        .hero-speakers-badge {
+            font-size: 15px;
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin-bottom: 14px;
+            letter-spacing: 0.03em;
+        }
+
+        .hero-lead {
+            max-width: 720px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: var(--text-muted);
+            line-height: 1.75;
+        }
+
+        /* HERO ARTWORK BANNER */
+        .hero-artwork-wrapper {
+            margin: 32px 0 44px;
+            text-align: center;
+        }
+
+        .hero-artwork-img {
+            width: 100%;
+            max-height: 440px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-hairline);
+            box-shadow: var(--shadow-float);
+        }
+
+        .artwork-caption {
+            font-size: 13.5px;
+            color: var(--text-light);
+            margin-top: 12px;
+            letter-spacing: 0.04em;
+        }
+
+        /* EXECUTIVE DASHBOARD */
+        .fast-facts-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-bottom: 48px;
+        }
+
+        .fact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 20px 22px;
+            box-shadow: var(--shadow-subtle);
+            border-top: 3px solid var(--accent-teal);
+        }
+
+        .fact-label {
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--text-light);
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .fact-value {
+            font-size: 16.5px;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.35;
+            margin-bottom: 4px;
+        }
+
+        .fact-desc {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        /* EDITORIAL NARRATIVE BLOCKS */
+        .editorial-block {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: 46px 50px;
+            margin-bottom: 38px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .section-eyebrow {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            color: var(--accent-teal);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .editorial-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--text-main);
+            line-height: 1.4;
+            margin-bottom: 22px;
+            letter-spacing: -0.01em;
+        }
+
+        /* DIALOGUE STRIPS */
+        .dialogue-strip-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 24px 0 28px;
+        }
+
+        .dialogue-strip {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 20px;
+            background: #fafaf8;
+            border-left: 3px solid var(--accent-terracotta);
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 15.5px;
+            color: var(--text-main);
+        }
+
+        .dialogue-strip strong {
+            color: var(--accent-terracotta);
+            font-weight: 700;
+        }
+
+        /* BESPOKE SVG INFOGRAPHIC 1: THE GAP */
+        .infographic-wrapper {
+            background: #fafaf8;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 28px 24px 24px;
+            margin: 32px 0 16px;
+        }
+
+        .infographic-header {
+            text-align: center;
+            margin-bottom: 22px;
+        }
+
+        .infographic-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: 0.04em;
+        }
+
+        .infographic-subtitle {
+            font-size: 12.5px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        .svg-responsive {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* IMMERSIVE DARK SECTION */
+        .immersive-dark-section {
+            background: var(--bg-dark);
+            color: #f4f4f5;
+            border-radius: var(--radius-lg);
+            padding: 56px 50px;
+            margin: 44px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-float);
+        }
+
+        .immersive-dark-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 340px;
+            height: 340px;
+            background: radial-gradient(circle, rgba(13, 92, 82, 0.4) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .immersive-dark-section .section-eyebrow {
+            color: #a7f3d0;
+        }
+
+        .dark-title {
+            font-size: clamp(22px, 3vw, 30px);
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+
+        .dark-lead {
+            font-size: 16.5px;
+            color: #d4d4d8;
+            line-height: 1.85;
+            margin-bottom: 28px;
+        }
+
+        /* SUSAN DAVID FRAMEWORK CARD */
+        .ea-framework-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border-dark);
+            border-radius: var(--radius-md);
+            padding: 30px;
+            margin-top: 24px;
+            backdrop-filter: blur(8px);
+        }
+
+        .ea-quote-intro {
+            font-size: 15.5px;
+            color: #e4e4e7;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .ea-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .ea-step-pill {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: var(--radius-sm);
+            padding: 14px 18px;
+            font-size: 14.5px;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+
+        .ea-step-pill strong {
+            color: #6ee7b7;
+            display: block;
+            font-size: 13px;
+            margin-bottom: 4px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 0.04em;
+        }
+
+        .ea-conclusion {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 18px;
+            font-size: 15px;
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        .ea-hook-trigger {
+            margin-top: 20px;
+            padding: 14px 18px;
+            background: rgba(168, 66, 24, 0.25);
+            border-left: 3px solid #f97316;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            font-size: 15px;
+            color: #ffedd5;
+            font-weight: 500;
+        }
+
+        /* MODULES EDITORIAL ROWS */
+        .modules-editorial-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .module-row {
+            display: grid;
+            grid-template-columns: 84px 1fr;
+            background: #fafaf8;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .module-row:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-subtle);
+            border-color: #cbd5e1;
+        }
+
+        .module-index-col {
+            background: var(--bg-subtle);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid var(--border-hairline);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .module-num-big {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--accent-teal);
+            line-height: 1;
+        }
+
+        .module-tag {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.08em;
+            margin-top: 4px;
+        }
+
+        .module-content-col {
+            padding: 22px 28px;
+        }
+
+        .module-title-h3 {
+            font-size: 17.5px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .module-dual-tag {
+            display: inline-block;
+            font-size: 11.5px;
+            font-weight: 700;
+            color: var(--accent-terracotta);
+            background: var(--accent-terracotta-bg);
+            border: 1px solid rgba(168, 66, 24, 0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .module-summary-p {
+            font-size: 14.5px;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .module-output-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            padding: 4px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--accent-teal);
+        }
+
+        /* SPEAKER CONSULTANT PROFILE (DUAL SPEAKERS) */
+        .coach-executive-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: 46px 50px;
+            margin-bottom: 38px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .dual-coaches-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
+
+        .coach-single-col {
+            background: #fafaf8;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 24px 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .coach-single-top {
+            display: grid;
+            grid-template-columns: 84px 1fr;
+            gap: 16px;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .coach-single-avatar {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-teal);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            background: #ffffff;
+        }
+
+        .coach-single-name {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 2px;
+        }
+
+        .coach-single-role {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-teal);
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .coach-tag-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .coach-pill {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .coach-pill.spotlight {
+            background: var(--accent-teal-light);
+            border-color: rgba(13, 92, 82, 0.25);
+            color: var(--accent-teal);
+        }
+
+        .coach-bio-narrative {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-top: 10px;
+        }
+
+        .coach-bio-narrative p {
+            margin-bottom: 10px;
+        }
+
+        .track-record-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 7px;
+            margin-top: 14px;
+        }
+
+        .track-record-item {
+            background: #ffffff;
+            padding: 8px 12px;
+            border-radius: var(--radius-sm);
+            border-left: 2px solid var(--accent-teal);
+            font-size: 12px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* DUAL SYNERGY BANNER */
+        .synergy-banner-box {
+            background: linear-gradient(135deg, #0f2420 0%, #173630 100%);
+            color: #ffffff;
+            border-radius: var(--radius-md);
+            padding: 22px 26px;
+            margin: 24px 0 20px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .synergy-banner-title {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: 0.02em;
+        }
+
+        .synergy-banner-desc {
+            font-size: 13.5px;
+            line-height: 1.75;
+            color: #e2e8f0;
+        }
+
+        /* OFFICIAL LOGO STRIP */
+        .official-logos-bar {
+            background: #fafaf8;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 18px 0 0;
+        }
+
+        .logo-slot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ea-hero-badge {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .cert-logo-badge {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            opacity: 0.88;
+        }
+
+        /* FRANKL BANNER */
+        .frankl-callout {
+            text-align: center;
+            padding: 44px 32px;
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            margin: 44px 0;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .frankl-callout blockquote {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.7;
+            color: var(--text-main);
+            margin-bottom: 14px;
+        }
+
+        .frankl-callout p {
+            font-size: 14px;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* LOGISTICS & ENROLLMENT */
+        .logistics-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-hairline);
+            border-radius: var(--radius-lg);
+            padding: 44px;
+            text-align: center;
+            box-shadow: var(--shadow-float);
+        }
+
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        .logistics-item {
+            background: #fafaf8;
+            border: 1px solid var(--border-hairline);
+            padding: 14px 16px;
+            border-radius: var(--radius-md);
+        }
+
+        .log-label {
+            font-size: 11.5px;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .log-value {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .btn-register-master {
+            display: inline-block;
+            background: var(--accent-teal);
+            color: #ffffff;
+            font-size: 17.5px;
+            font-weight: 700;
+            padding: 16px 48px;
+            border-radius: 999px;
+            text-decoration: none;
+            box-shadow: 0 10px 24px -4px rgba(13, 92, 82, 0.35);
+            transition: all 0.25s ease;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-register-master:hover {
+            background: #093c35;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 28px -4px rgba(13, 92, 82, 0.45);
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background: #ffffff;
+                color: #000000;
+                font-size: 14px;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+            .utility-bar, .btn-register-master, .btn-print, .cta-note {
+                display: none !important;
+            }
+            .editorial-block, .coach-executive-card, .logistics-card {
+                border: 1px solid #e2e8f0;
+                box-shadow: none !important;
+                page-break-inside: avoid;
+                margin-bottom: 24px;
+                padding: 24px;
+            }
+            .immersive-dark-section {
+                background: #f8fafc !important;
+                color: #0f172a !important;
+                border: 1px solid #cbd5e1;
+                box-shadow: none !important;
+                page-break-inside: avoid;
+            }
+            .immersive-dark-section * {
+                color: #0f172a !important;
+            }
+            .dark-title, .dark-lead {
+                color: #0f172a !important;
+            }
+            .ea-framework-card {
+                background: #ffffff !important;
+                border: 1px solid #cbd5e1 !important;
+            }
+            .ea-step-pill {
+                background: #f1f5f9 !important;
+                color: #0f172a !important;
+                border: 1px solid #cbd5e1 !important;
+            }
+            .ea-step-pill strong {
+                color: #0d5c52 !important;
+            }
+            .ea-hook-trigger {
+                background: #fff7ed !important;
+                color: #9a3412 !important;
+                border-left-color: #ea580c !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 24px 16px 64px;
+            }
+            .fast-facts-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .ea-steps-grid {
+                grid-template-columns: 1fr;
+            }
+            .dual-coaches-grid {
+                grid-template-columns: 1fr;
+            }
+            .coach-single-top {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .coach-single-avatar {
+                margin: 0 auto 10px;
+            }
+            .coach-tag-pills {
+                justify-content: center;
+            }
+            .logistics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .editorial-block, .immersive-dark-section, .coach-executive-card, .logistics-card {
+                padding: 28px 20px;
+            }
+            .module-row {
+                grid-template-columns: 60px 1fr;
+            }
+            .module-content-col {
+                padding: 18px 16px;
+            }
+        }
+    
+        .coach-initials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-teal);
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+        }
+        .utility-brand img,
+        .ea-hero-badge,
+        .cert-logo-badge {
+            background: #ffffff;
+            border: 1px solid var(--border-hairline);
+            border-radius: var(--radius-sm);
+            padding: 4px;
+        }
+        .utility-brand img {
+            width: 48px;
+            height: 38px;
+            object-fit: contain;
+        }
+        .ea-hero-badge,
+        .cert-logo-badge {
+            width: 92px;
+            height: 52px;
+        }
+        .page-back-link {
+            color: var(--accent-teal);
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid currentColor;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- UTILITY BAR WITH OFFICIAL LOGO & PRINT OPTION -->
+        <div class="utility-bar">
+            <div class="utility-brand">
+                <img src="證照照片/emotional-agility-2026.jpg" alt="Emotional Agility Official Logo">
+                <span class="utility-badge">Dual-Facilitator Executive Workshop</span>
+                <a class="page-back-link" href="proposal.html">回到短講提案</a>
+            </div>
+            <button class="btn-print" onclick="window.print()">
+                列印 / 轉存 PDF 企劃書
+            </button>
+        </div>
+
+        <!-- HERO EDITORIAL HEADER -->
+        <header class="hero">
+            <div class="hero-pretitle">Emotional Agility® 國際實證體系 ‧ 雙講師核心工作坊企劃案</div>
+            <h1 class="serif">
+                我們以為自己在做決定，
+                <span class="break">其實只是在照著劇本演。</span>
+            </h1>
+            <div class="hero-subtitle serif">
+                《HOOKED｜從自動反應到心理僵化》
+            </div>
+            <div class="hero-speakers-badge">
+                徐柏峯 (Percy Hsu) × 江宜汾 (Eva Chiang) 雙專家聯合帶領 ｜ 國際情緒敏捷雙認證實踐
+            </div>
+            <p class="hero-lead">
+                3 小時情緒敏捷核心工作坊：融合組織敏捷治理與國家級主播敘事提問，在動盪與高壓的變局中，為個人與團隊重啟心智選擇權
+            </p>
+        </header>
+
+        <!-- HERO EDITORIAL ARTWORK -->
+        <div class="hero-artwork-wrapper">
+            <img src="assets/hooked_editorial_concept.jpg" alt="Emotional Agility Concept Illustration" class="hero-artwork-img">
+            <div class="artwork-caption serif">
+                「When the story writes us ── 當我們寫下故事，故事也開始反過來寫下我們。」
+            </div>
+        </div>
+
+        <!-- EXECUTIVE FAST FACTS DASHBOARD -->
+        <section class="fast-facts-grid">
+            <div class="fact-card">
+                <div class="fact-label">研習時長</div>
+                <div class="fact-value">3 小時高密度</div>
+                <div class="fact-desc">概念聚焦 ‧ 深層拆解 ‧ 實作落地的完整單元</div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-label">理論基底</div>
+                <div class="fact-value">哈佛醫學院實證</div>
+                <div class="fact-desc">蘇珊·大衛（Susan David）博士情緒敏捷體系</div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-label">師資規格</div>
+                <div class="fact-value">雙專家聯合引導</div>
+                <div class="fact-desc">國際情緒敏捷認證執業師 × 認證引導師</div>
+            </div>
+            <div class="fact-card">
+                <div class="fact-label">核心產出</div>
+                <div class="fact-value">日常口袋微練習</div>
+                <div class="fact-desc">即時切開事實與腦補，建立個人與團隊煞車機制</div>
+            </div>
+        </section>
+
+        <!-- SECTION 1: THE EVERYDAY HOOK -->
+        <article class="editorial-block">
+            <div class="section-eyebrow">The Workplace Reality</div>
+            <h2 class="editorial-title serif">那些我們習以為常、卻悄悄接管行動的自動駕駛</h2>
+
+            <div class="dialogue-strip-group">
+                <div class="dialogue-strip">
+                    會議室裡，主管皺了皺眉頭，你心裡立刻浮現一行字：<strong>「他又在否定我的提案了。」</strong>
+                </div>
+                <div class="dialogue-strip">
+                    通訊軟體上收到一句簡短的「好，收到。」你盯著螢幕，胸口一緊，開始揣測對方是不是在不耐煩。
+                </div>
+                <div class="dialogue-strip">
+                    每當團隊面對變更或新做法，空氣裡總會飄出一句：<strong>「算了吧，之前試過根本沒用。」</strong>
+                </div>
+            </div>
+
+            <p style="color: var(--text-muted); margin-bottom: 16px;">
+                很多時候，真正讓我們感到內耗與卡關的，往往不是眼前發生的事情本身。
+            </p>
+            <p style="color: var(--text-muted);">
+                而是事情發生的那一瞬間，我們的大腦太快了——在理性還沒介入前，自動駕駛系統就已經根據過去的恐懼、包袱或防衛，替事情下了結論，並且讓我們對這個版本深信不疑。
+            </p>
+
+            <!-- BESPOKE DESIGNED SVG INFOGRAPHIC 1: THE GAP -->
+            <div class="infographic-wrapper">
+                <div class="infographic-header">
+                    <div class="infographic-title serif">心智路徑透視：慣性自動導航 VS. 情緒敏捷空間</div>
+                    <div class="infographic-subtitle">The Stimulus-Response Gap: How Emotional Agility Creates Choice</div>
+                </div>
+
+                <svg class="svg-responsive" viewBox="0 0 920 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="916" height="356" rx="14" fill="#ffffff" stroke="#e7e5e0" stroke-width="1.5"/>
+
+                    <defs>
+                        <marker id="arrow-terracotta" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 1 L 8 5 L 0 9 z" fill="#a84218" />
+                        </marker>
+                        <marker id="arrow-teal" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                            <path d="M 0 1 L 8 5 L 0 9 z" fill="#0d5c52" />
+                        </marker>
+                    </defs>
+
+                    <!-- STIMULUS ORIGIN NODE (LEFT) -->
+                    <g transform="translate(85, 180)">
+                        <circle cx="0" cy="0" r="36" fill="#f4f3ef" stroke="#d4d4d8" stroke-width="2"/>
+                        <circle cx="0" cy="0" r="27" fill="#ffffff" stroke="#0d5c52" stroke-width="1.5" stroke-dasharray="3 3"/>
+                        <text x="0" y="-3" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="800" fill="#18181b">外部刺激</text>
+                        <text x="0" y="13" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="9.5" font-weight="700" fill="#71717a">STIMULUS</text>
+                        
+                        <rect x="-56" y="44" width="112" height="22" rx="6" fill="#f4f3ef" stroke="#e4e4e7"/>
+                        <text x="0" y="59" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10.5" font-weight="500" fill="#71717a">訊息 ‧ 眼神 ‧ 變革</text>
+                    </g>
+
+                    <!-- TOP PATHWAY: RIGID HOOKED LOOP -->
+                    <path d="M 115 158 C 160 92, 210 88, 270 88 L 740 88" stroke="#a84218" stroke-width="2.5" stroke-dasharray="6 4" fill="none"/>
+                    
+                    <g transform="translate(135, 34)">
+                        <rect x="0" y="0" width="144" height="26" rx="13" fill="#fbf0eb" stroke="#f0bba7" stroke-width="1.2"/>
+                        <text x="72" y="17" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700" fill="#a84218">被勾住 ‧ 心理僵化迴圈</text>
+                    </g>
+
+                    <!-- Card 1: 瞬間編劇 -->
+                    <g transform="translate(340, 88)">
+                        <rect x="-64" y="-24" width="128" height="48" rx="8" fill="#ffffff" stroke="#f0bba7" stroke-width="1.5"/>
+                        <text x="0" y="-3" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700" fill="#a84218">1. 瞬間編劇</text>
+                        <text x="0" y="14" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#71717a">大腦秒下定論</text>
+                    </g>
+
+                    <line x1="404" y1="88" x2="438" y2="88" stroke="#a84218" stroke-width="2" marker-end="url(#arrow-terracotta)"/>
+
+                    <!-- Card 2: 認知融合 -->
+                    <g transform="translate(505, 88)">
+                        <rect x="-64" y="-24" width="128" height="48" rx="8" fill="#fef2f2" stroke="#f87171" stroke-width="1.5"/>
+                        <text x="0" y="-3" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700" fill="#991b1b">2. 認知融合</text>
+                        <text x="0" y="14" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#991b1b">深信腦補等於事實</text>
+                    </g>
+
+                    <line x1="569" y1="88" x2="603" y2="88" stroke="#a84218" stroke-width="2" marker-end="url(#arrow-terracotta)"/>
+
+                    <!-- Card 3: 視野極度收窄 -->
+                    <g transform="translate(685, 88)">
+                        <rect x="-76" y="-24" width="152" height="48" rx="8" fill="#991b1b" stroke="#7f1d1d"/>
+                        <text x="0" y="-3" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="12.5" font-weight="700" fill="#ffffff">3. 視野極度收窄</text>
+                        <text x="0" y="14" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#fecaca">慣性防衛 ‧ 失去彈性</text>
+                    </g>
+
+                    <path d="M 761 88 C 805 88, 805 136, 761 136 L 610 136" stroke="#f87171" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+                    <text x="685" y="150" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="600" fill="#991b1b">陷入舊劇本慣性循環</text>
+
+                    <!-- BOTTOM PATHWAY: EMOTIONAL AGILITY -->
+                    <path d="M 115 202 C 160 268, 210 272, 270 272 L 750 272" stroke="#0d5c52" stroke-width="3" fill="none"/>
+                    
+                    <g transform="translate(135, 300)">
+                        <rect x="0" y="0" width="144" height="26" rx="13" fill="#e6f3f1" stroke="#99d5cc" stroke-width="1.2"/>
+                        <text x="72" y="17" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11.5" font-weight="700" fill="#0d5c52">情緒敏捷 ‧ 空間創造</text>
+                    </g>
+
+                    <!-- THE GAP KEYSTONE (HERO NODE) -->
+                    <g transform="translate(340, 272)">
+                        <circle cx="0" cy="0" r="34" fill="#0d5c52" filter="drop-shadow(0 4px 10px rgba(13,92,82,0.35))"/>
+                        <circle cx="0" cy="0" r="27" fill="#0d5c52" stroke="#6ee7b7" stroke-width="1.8" stroke-dasharray="3 2"/>
+                        <text x="0" y="-4" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#ffffff">THE GAP</text>
+                        <text x="0" y="12" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#a7f3d0">覺察空間</text>
+                        <text x="0" y="52" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#0d5c52">看見被勾住 ‧ 踩煞車</text>
+                    </g>
+
+                    <line x1="376" y1="272" x2="422" y2="272" stroke="#0d5c52" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+                    <!-- Card 2 Agile: Reality Check -->
+                    <g transform="translate(495, 272)">
+                        <rect x="-68" y="-24" width="136" height="48" rx="8" fill="#ffffff" stroke="#0d5c52" stroke-width="1.8"/>
+                        <text x="0" y="-3" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700" fill="#0d5c52">現實檢核</text>
+                        <text x="0" y="14" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#52525b">切開事實與腦補</text>
+                    </g>
+
+                    <line x1="563" y1="272" x2="609" y2="272" stroke="#0d5c52" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+
+                    <!-- Card 3 Agile: Values & Freedom -->
+                    <g transform="translate(695, 272)">
+                        <rect x="-82" y="-26" width="164" height="52" rx="10" fill="#e6f3f1" stroke="#0d5c52" stroke-width="2"/>
+                        <text x="0" y="-3" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="13.5" font-weight="800" fill="#0d5c52">依價值行動</text>
+                        <text x="0" y="15" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#093c35">重獲選擇與自由</text>
+                    </g>
+                </svg>
+            </div>
+        </article>
+
+        <!-- SECTION 2: IMMERSIVE DARK SECTION (AI ERA & INNER AGILITY) -->
+        <section class="immersive-dark-section">
+            <div class="section-eyebrow">The AI Era Paradox</div>
+            <h2 class="dark-title serif">外在世界越是加速，人類越需要向內覺察的「內在敏捷力」</h2>
+            <p class="dark-lead">
+                這兩年，AI 讓外在的工具、流程與運算速度達到了極致。演算法能幫我們極速處理海量資訊與方案，卻無法替我們消解團隊間的心智防衛，更無法替我們停止心裡的無效內耗。
+            </p>
+            <p class="dark-lead" style="margin-bottom: 0;">
+                過去談敏捷，組織的焦點往往只在外部的流程轉型與交付節奏；然而，當外在衝擊越來越頻繁且劇烈，人類最無法被機器取代的核心優勢，正是<strong>「向內看清自己」的內在敏捷力</strong>。
+            </p>
+
+            <!-- SUSAN DAVID FRAMEWORK CARD -->
+            <div class="ea-framework-card">
+                <p class="ea-quote-intro serif">
+                    哈佛醫學院心理學家蘇珊·大衛（Susan David）博士在經過多年實證研究後指出：面對變局與高壓，關鍵從來不是強迫自己正面思考，更不是壓抑情緒；而是：
+                </p>
+
+                <div class="ea-steps-grid">
+                    <div class="ea-step-pill">
+                        <strong>STEP 01 ‧ SHOWING UP</strong>
+                        坦然面對並如實接納當下的真實感受
+                    </div>
+                    <div class="ea-step-pill">
+                        <strong>STEP 02 ‧ STEPPING OUT</strong>
+                        退一步，與腦中的預設劇本拉開清醒距離
+                    </div>
+                    <div class="ea-step-pill">
+                        <strong>STEP 03 ‧ WALKING YOUR WHY</strong>
+                        重新對齊自己與團隊最在乎的核心價值
+                    </div>
+                    <div class="ea-step-pill">
+                        <strong>STEP 04 ‧ MOVING ON</strong>
+                        在每一次挑戰中，持續靈活微調應對方式
+                    </div>
+                </div>
+
+                <div class="ea-conclusion">
+                    唯有具備這份敏捷力，我們才能在動盪中站穩內在的定錨，不再被情緒消耗拖垮，從容做出真正清醒且有力量的選擇。
+                </div>
+
+                <div class="ea-hook-trigger">
+                    而在這整套修煉中，最關鍵也最基礎的第一步，就是<strong>看清楚自己究竟被什麼給「勾住」（Hooked）</strong>。如果連自己正被什麼慣性牽著走都看不見，後續所有的拉開距離與價值抉擇，都將無從發生。
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SYSTEM RIGIDITY (ME - WE - US) -->
+        <article class="editorial-block">
+            <div class="section-eyebrow">System Dynamics</div>
+            <h2 class="editorial-title serif">被勾住的代價：從個人防衛，蔓延為組織集體僵化</h2>
+            <p style="color: var(--text-muted);">
+                大腦天生熱愛自動導航。當它將瞬間的直覺反應當成「無可爭辯的事實」時，我們的視野會瞬間收窄。個人的心理防衛，會如同共振般迅速傳導至團隊與組織文化：
+            </p>
+
+            <!-- BESPOKE DESIGNED SVG INFOGRAPHIC 2: SYSTEM RESONANCE -->
+            <div class="infographic-wrapper">
+                <div class="infographic-header">
+                    <div class="infographic-title serif">Me → We → Us 系統共振模型：僵化的傳導與破解</div>
+                    <div class="infographic-subtitle">How Individual Hooks Amplify into Organizational Rigidity</div>
+                </div>
+
+                <svg class="svg-responsive" viewBox="0 0 920 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="916" height="326" rx="14" fill="#ffffff" stroke="#e7e5e0" stroke-width="1.5"/>
+
+                    <!-- Left: Concentric Ripples Art -->
+                    <g transform="translate(170, 165)">
+                        <circle cx="0" cy="0" r="125" fill="#fbf0eb" fill-opacity="0.4" stroke="#f0bba7" stroke-width="1.5" stroke-dasharray="6 4"/>
+                        <circle cx="0" cy="0" r="86" fill="#e6f3f1" fill-opacity="0.5" stroke="#99d5cc" stroke-width="1.5"/>
+                        <circle cx="0" cy="0" r="48" fill="#0d5c52" stroke="#ffffff" stroke-width="3" filter="drop-shadow(0 4px 10px rgba(13,92,82,0.3))"/>
+                        
+                        <text x="0" y="-4" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" fill="#ffffff">Me</text>
+                        <text x="0" y="13" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" font-weight="700" fill="#a7f3d0">個人心智</text>
+
+                        <text x="0" y="-62" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#0d5c52">We 團隊動力</text>
+                        <text x="0" y="-102" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" font-weight="800" fill="#a84218">Us 組織文化系統</text>
+
+                        <path d="M 0 -10 L 0 -118" stroke="#a84218" stroke-width="2" stroke-dasharray="2 2"/>
+                    </g>
+
+                    <!-- Right Column: 3 Layer Breakdown Cards -->
+                    <!-- Layer 1: Me -->
+                    <g transform="translate(340, 32)">
+                        <rect x="0" y="0" width="530" height="74" rx="8" fill="#fafaf8" stroke="#e7e5e0"/>
+                        <rect x="0" y="0" width="6" height="74" rx="3" fill="#0d5c52"/>
+                        <text x="24" y="27" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#0d5c52">ME ‧ 個人層次</text>
+                        <text x="146" y="26" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700" fill="#18181b">認知融合與心理防衛</text>
+                        <text x="24" y="52" font-family="'Noto Sans TC', sans-serif" font-size="12.5" fill="#52525b">害怕顯得不專業、自我懷疑。「多說多錯」的劇本扼殺了個人探尋新選項的彈性。</text>
+                    </g>
+
+                    <path d="M 605 106 L 605 124" stroke="#a1a1aa" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+                    <!-- Layer 2: We -->
+                    <g transform="translate(340, 126)">
+                        <rect x="0" y="0" width="530" height="74" rx="8" fill="#fafaf8" stroke="#e7e5e0"/>
+                        <rect x="0" y="0" width="6" height="74" rx="3" fill="#2563eb"/>
+                        <text x="24" y="27" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#2563eb">WE ‧ 團隊層次</text>
+                        <text x="146" y="26" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700" fill="#18181b">沈默螺旋與部門壁壘</text>
+                        <text x="24" y="52" font-family="'Noto Sans TC', sans-serif" font-size="12.5" fill="#52525b">彼此揣測防禦，只剩公事公辦。會議充斥「心照不宣的沈默」，真正的問題無人敢提。</text>
+                    </g>
+
+                    <path d="M 605 200 L 605 218" stroke="#a1a1aa" stroke-width="1.5" stroke-dasharray="3 2"/>
+
+                    <!-- Layer 3: Us -->
+                    <g transform="translate(340, 220)">
+                        <rect x="0" y="0" width="530" height="74" rx="8" fill="#fafaf8" stroke="#e7e5e0"/>
+                        <rect x="0" y="0" width="6" height="74" rx="3" fill="#a84218"/>
+                        <text x="24" y="27" font-family="'Outfit', sans-serif" font-size="15.5" font-weight="800" fill="#a84218">US ‧ 組織層次</text>
+                        <text x="146" y="26" font-family="'Noto Sans TC', sans-serif" font-size="13" font-weight="700" fill="#18181b">制度慣性與文化僵化</text>
+                        <text x="24" y="52" font-family="'Noto Sans TC', sans-serif" font-size="12.5" fill="#52525b">不容錯的考核機制，集體被「我們一直都是這樣做」的慣性綁架，全面喪失適應力。</text>
+                    </g>
+                </svg>
+            </div>
+        </article>
+
+        <!-- SECTION 4: 4 WORKSHOP MODULES (DUAL FACILITATION) -->
+        <article class="editorial-block">
+            <div class="section-eyebrow">Curriculum Architecture</div>
+            <h2 class="editorial-title serif">3 小時高密度研習：雙講師聯合引導，把關鍵基本功做深、做透</h2>
+            <p style="color: var(--text-muted);">
+                這不是一堂點到為止的概念課，而是由<strong>組織敏捷變革教練（徐柏峯）</strong>與<strong>資深新聞主播兼國際引導師（江宜汾）</strong>聯手帶領，融合「外在客觀事實還原」與「內在心智煞車機制」的深度轉化歷程：
+            </p>
+
+            <div class="modules-editorial-list">
+                <!-- MODULE 01 -->
+                <div class="module-row">
+                    <div class="module-index-col">
+                        <div class="module-num-big">01</div>
+                        <div class="module-tag">AWARENESS</div>
+                    </div>
+                    <div class="module-content-col">
+                        <div class="module-dual-tag">雙引導師互動 ‧ 主播直覺透視 × 認知機制解構</div>
+                        <h3 class="module-title-h3">照見自動駕駛的速度 (Instant Storytelling)</h3>
+                        <p class="module-summary-p">
+                            江宜汾老師運用二十年新聞現場的高壓敏銳度，帶領學員親身體驗大腦如何在毫無防備時根據微弱線索「秒編劇本」；徐柏峯老師同步切入認知神經機制，解構自動駕駛背後的心理防衛信號，看懂何謂真正的「被勾住」。
+                        </p>
+                        <div class="module-output-pill">
+                            <span>核心成果：</span>建立個人心智自動導航的即時辨識警準
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODULE 02 -->
+                <div class="module-row">
+                    <div class="module-index-col">
+                        <div class="module-num-big">02</div>
+                        <div class="module-tag">DIAGNOSIS</div>
+                    </div>
+                    <div class="module-content-col">
+                        <div class="module-dual-tag">雙引導師實戰 ‧ 新聞精準提問 × 現實檢核表單</div>
+                        <h3 class="module-title-h3">現實檢核實戰 (Reality Check)</h3>
+                        <p class="module-summary-p">
+                            江宜汾老師示範新聞採訪級的深度追問技術，帶領學員層層剝開主觀腦補；徐柏峯老師導入結構化「事實 vs. 詮釋」檢核工具，準確切開「眼前的客觀事實」與「內在的恐懼投射」，打破慣性防衛。
+                        </p>
+                        <div class="module-output-pill">
+                            <span>核心成果：</span>掌握「客觀事實 vs. 主觀腦補」的思維脫鉤技術
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODULE 03 -->
+                <div class="module-row">
+                    <div class="module-index-col">
+                        <div class="module-num-big">03</div>
+                        <div class="module-tag">CASE STUDY</div>
+                    </div>
+                    <div class="module-content-col">
+                        <div class="module-dual-tag">雙重視角剖析 ‧ 研發治理實證 × 公共溝通盲點</div>
+                        <h3 class="module-title-h3">系統性集體盲點剖析 (Systemic Rigidity)</h3>
+                        <p class="module-summary-p">
+                            透過真實重大決策個案：徐柏峯老師從金融轉型與大型專案治理視角，橫向透視個人防衛如何演化為部門壁壘與組織僵化；江宜汾老師從公眾傳播與人際動力切入，剖析沉默螺旋與團隊溝通內耗的傳導路徑。
+                        </p>
+                        <div class="module-output-pill">
+                            <span>核心成果：</span>Me → We → Us 跨層次阻斷僵化傳導路徑
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODULE 04 -->
+                <div class="module-row">
+                    <div class="module-index-col">
+                        <div class="module-num-big">04</div>
+                        <div class="module-tag">PRACTICE</div>
+                    </div>
+                    <div class="module-content-col">
+                        <div class="module-dual-tag">雙專家合流 ‧ 心智煞車動作 × ARC 身心覺察復原力</div>
+                        <h3 class="module-title-h3">日常口袋微練習 (Pocket Practice)</h3>
+                        <p class="module-summary-p">
+                            當日常會議又踩到你的按鈕、情緒即將接管行動時：徐柏峯老師傳授在刺激與反應之間迅速拉出心理空間的心智煞車動作；江宜汾老師整合「ARC × RECODE」內在轉化呼吸定錨與日常情境微習慣，讓學員帶著可隨時啟動的解法回到工作現場。
+                        </p>
+                        <div class="module-output-pill">
+                            <span>核心成果：</span>帶走 1 套可在日常高壓環境中隨時啟動的微習慣
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- FRANKL QUOTE CALLOUT -->
+        <div class="frankl-callout">
+            <blockquote class="serif">
+                「刺激與反應之間，原本就有一個空間；<br>
+                在那段空間裡，蘊藏著我們選擇回應的自由與力量。」
+            </blockquote>
+            <p>— 維克多·弗蘭克 (Viktor Frankl) ｜ 給自己 3 個小時，退一步，把局看清楚。</p>
+        </div>
+
+        <!-- SECTION 5: DUAL SPEAKER CONSULTANT PROFILES -->
+        <section class="coach-executive-card">
+            <div class="section-eyebrow">Dual Facilitators & Credentials</div>
+            <h2 class="editorial-title serif" style="margin-bottom: 8px;">雙講師簡介與專業資質</h2>
+            <p style="color: var(--text-muted); font-size: 14.5px; margin-bottom: 20px;">
+                本工作坊由兩位均取得哈佛體系國際情緒敏捷認證的專家聯合帶領，兼具組織架構理性交付與新聞主播感性心智洞察：
+            </p>
+
+            <div class="dual-coaches-grid">
+                <!-- SPEAKER 1: 徐柏峯 -->
+                <div class="coach-single-col">
+                    <div>
+                        <div class="coach-single-top">
+                            <div class="coach-single-avatar coach-initials" aria-label="徐柏峯 Percy Hsu">PH</div>
+                            <div>
+                                <h3 class="coach-single-name">徐柏峯</h3>
+                                <div class="coach-single-role">Percy Hsu ‧ 企業敏捷教練 & 組織變革顧問<br>國際情緒敏捷認證執業師 (Practitioner)</div>
+                                <div class="coach-tag-pills">
+                                    <span class="coach-pill spotlight">台灣首位情緒敏捷執業師</span>
+                                    <span class="coach-pill">Scrum.org PSM III</span>
+                                    <span class="coach-pill">兩岸首位 UX Master</span>
+                                    <span class="coach-pill">敏捷專家協會創會長</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coach-bio-narrative">
+                            <p>
+                                具備敏捷思維（Agile）、變革領導（Change Leadership）與使用者體驗（UX Research）跨領域專業。擁有 15 年以上企業輔導與引導實戰經驗，光在金融業即累計深度輔導 34 家金融機構，全面覆蓋 7 大金融控股集團。
+                            </p>
+                            <p>
+                                身為取得國際 Emotional Agility Certified Practitioner 認證之專家，徐教練將情緒敏捷的實證引導架構融入組織領導力培育與變革輔導中，協助團隊在高度變動與壓力環境下看清思維慣性、化解溝通防衛，建立具備深層心理安全感的敏捷協作生態。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="track-record-grid">
+                        <div class="track-record-item">累計深度輔導 7 大金控集團、34 家金融機構</div>
+                        <div class="track-record-item">Scrum.org PSM III 全球頂級敏捷認證</div>
+                        <div class="track-record-item">兩岸首位 NN/g UX Master 大師認證（15 門全科通曉）</div>
+                        <div class="track-record-item">連續五年獲選台灣金融研訓院「菁英講座」</div>
+                        <div class="track-record-item">「敏捷專家協會」創會長（台灣最早成立之敏捷社團法人）</div>
+                        <div class="track-record-item">受邀於 IAF（國際引導者協會）杭州年會主講實戰工作坊</div>
+                    </div>
+                </div>
+
+                <!-- SPEAKER 2: 江宜汾 -->
+                <div class="coach-single-col">
+                    <div>
+                        <div class="coach-single-top">
+                            <img src="工作照片/個人照.jpg" alt="江宜汾 Eva Chiang" class="coach-single-avatar">
+                            <div>
+                                <h3 class="coach-single-name">江宜汾</h3>
+                                <div class="coach-single-role">Eva Chiang ‧ 資深新聞主播 & 國際引導師<br>國際情緒敏捷認證引導師 (Facilitator)</div>
+                                <div class="coach-tag-pills">
+                                    <span class="coach-pill spotlight">情緒靈敏力認證引導師</span>
+                                    <span class="coach-pill">前中視新聞主播 / 財經組長</span>
+                                    <span class="coach-pill">泰拉學校創辦人</span>
+                                    <span class="coach-pill">英國牛津布魯克斯碩士</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coach-bio-narrative">
+                            <p>
+                                前台灣中視新聞主播、專題組與財經組組長、文字記者，旗艦財經節目《小資賺大錢》、《進擊大未來》製作人與主持人。二十年新聞採訪與現場直播訓練，淬鍊出在龐雜繁複資訊中迅速掌握本質、深度追問與結構化表達能力。
+                            </p>
+                            <p>
+                                身為取得國際 Emotional Agility Certified Facilitator 認證之專家，長年投入教育創新、青年陪伴與女性成長。現為 1221 未來教育發展協會創會理事長、泰拉學校創辦人，主持製作教育 Podcast《無邊界學習》（累計逾 100 集訪談），創立「ARC × RECODE」內在轉化體系，長於引導學員覺察情緒、重整界線並恢復內在選擇力。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="track-record-grid">
+                        <div class="track-record-item">前中視新聞核心主播、財經與專題組長、文字記者</div>
+                        <div class="track-record-item">旗艦財經趨勢節目《小資賺大錢》《進擊大未來》製作主持</div>
+                        <div class="track-record-item">Emotional Agility Certified Facilitator（師從 Susan David）</div>
+                        <div class="track-record-item">Emergenetics Certified Youth Facilitator（全腦思維引導師）</div>
+                        <div class="track-record-item">英國牛津布魯克斯大學電子媒體碩士、政大外交系學士</div>
+                        <div class="track-record-item">TEDx 演講主持、大型論壇專業引導師與公共敘事培訓師</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DUAL SYNERGY CALLOUT -->
+            <div class="synergy-banner-box">
+                <div class="synergy-banner-title">雙講師聯袂賦能價值：理性組織架構 × 感性心智轉化</div>
+                <div class="synergy-banner-desc">
+                    徐柏峯老師長於「從組織制度與研發治理破除部門壁壘」，江宜汾老師長於「從公眾提問與共情傾聽化解個人心智防衛」。兩位專家均取得哈佛醫學院國際情緒敏捷認證，為組織提供兼具外在協同效率與內在心理韌性的完整轉化方案。
+                </div>
+            </div>
+
+            <!-- OFFICIAL CERTIFICATION BADGES ROW -->
+            <div class="official-logos-bar">
+                <div class="logo-slot" title="Emotional Agility Certified Credentials">
+                    <img class="ea-hero-badge" src="證照照片/emotional-agility-2026.jpg" alt="Emotional Agility Certified Logo">
+                </div>
+                <div class="logo-slot" title="Scrum.org PSM III">
+                    <img class="cert-logo-badge" src="證照照片/emotional-agility-2026.jpg" alt="Scrum.org PSM III Logo">
+                </div>
+                <div class="logo-slot" title="Nielsen Norman Group UX Master Certified">
+                    <img class="cert-logo-badge" src="證照照片/emergenetics-youth-facilitator-upright.jpg" alt="NN/g UX Master Logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- LOGISTICS & ENROLLMENT (ENTERPRISE / OPEN WORKSHOP) -->
+        <section class="logistics-card">
+            <div class="logistics-grid">
+                <div class="logistics-item">
+                    <div class="log-label">課程主題</div>
+                    <div class="log-value">HOOKED｜從自動反應到心理僵化</div>
+                </div>
+                <div class="logistics-item">
+                    <div class="log-label">師資配置</div>
+                    <div class="log-value">雙講師聯合引導（徐柏峯 × 江宜汾）</div>
+                </div>
+                <div class="logistics-item">
+                    <div class="log-label">學習規格</div>
+                    <div class="log-value">3 小時深度專題研習</div>
+                </div>
+                <div class="logistics-item">
+                    <div class="log-label">研習名額</div>
+                    <div class="log-value">限額 [XX] 席（維護對話深度）</div>
+                </div>
+            </div>
+
+            <a href="#register" class="btn-register-master">立即預約專案諮詢 ‧ 啟動心智轉化</a>
+            <div class="cta-note" style="font-size: 13.5px; color: var(--text-light); margin-top: 14px;">
+                為確保雙引導師沉浸式反思、個案剖析與實作回饋品質，本工作坊採限額預約制。
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
