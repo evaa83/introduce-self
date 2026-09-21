@@ -302,3 +302,24 @@
   .home-page .reveal { opacity: 1; transform: none; }
   .home-page .section, .home-page .podcast, .home-page .terra { padding-top: 30px; padding-bottom: 30px; }
 }
+
+/* C+ Salon — conversations, culture and shared experiences. */
+.home-page .cplus-salon { border-top: 1px solid var(--line); }
+.home-page .salon-intro { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; margin-bottom: 38px; }
+.home-page .salon-tagline { color: var(--clay); font-family: var(--serif); font-size: clamp(20px, 2.3vw, 28px); line-height: 1.8; }
+.home-page .salon-copy p { color: var(--muted); font-size: 15px; line-height: 1.95; margin-bottom: 16px; }
+.home-page .salon-link { color: var(--forest); display: inline-block; padding: 8px 0; }
+.home-page .salon-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.home-page .salon-gallery figure { margin: 0; }
+.home-page .salon-gallery img { display: block; width: 100%; height: auto; border-radius: 2px; }
+.home-page .salon-gallery figcaption { color: var(--muted); font-size: 12px; line-height: 1.7; padding-top: 10px; }
+.home-page .salon-scenes { display: grid; gap: 24px; }
+@media (min-width: 901px) and (max-width: 1250px) {
+  .home-page .site-header { flex-wrap: wrap; }
+  .home-page .primary-nav { flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  .home-page .salon-intro, .home-page .salon-gallery { grid-template-columns: 1fr; gap: 26px; }
+  .home-page .salon-intro { margin-bottom: 28px; }
+  .home-page .salon-tagline br { display: none; }
+}
