@@ -94,7 +94,7 @@ p {
   padding: 4px 10px 5px;
   color: var(--cream);
   background: var(--forest);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
   letter-spacing: 0.08em;
 }
 
@@ -108,7 +108,7 @@ p {
   align-items: center;
   gap: clamp(16px, 2vw, 34px);
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 1.065rem;
 }
 
 .primary-nav a:hover,
@@ -141,7 +141,7 @@ p {
 .overline {
   margin-bottom: 18px;
   color: var(--clay);
-  font-size: 0.73rem;
+  font-size: 0.855rem;
   font-weight: 700;
   letter-spacing: 0.27em;
 }
@@ -160,7 +160,7 @@ p {
 .hero h1 {
   margin-bottom: 28px;
   font-family: var(--serif);
-  font-size: clamp(3rem, 4.55vw, 4.35rem);
+  font-size: clamp(3.125rem, 4.55vw, 4.475rem);
   font-weight: 900;
   line-height: 1.3;
   letter-spacing: 0.035em;
@@ -170,7 +170,7 @@ p {
   margin-bottom: 21px;
   color: var(--forest);
   font-family: var(--serif);
-  font-size: clamp(1.18rem, 1.7vw, 1.38rem);
+  font-size: clamp(1.305rem, 1.7vw, 1.505rem);
   font-weight: 700;
   letter-spacing: 0.28em;
 }
@@ -182,7 +182,7 @@ p {
 .hero-intro {
   max-width: 490px;
   color: var(--muted);
-  font-size: clamp(1.02rem, 1.4vw, 1.12rem);
+  font-size: clamp(1.145rem, 1.4vw, 1.245rem);
   line-height: 2;
 }
 
@@ -202,7 +202,7 @@ p {
   min-height: 52px;
   padding: 12px 28px;
   border-radius: 999px;
-  font-size: 0.95rem;
+  font-size: 1.075rem;
   font-weight: 500;
   transition: transform 180ms ease, background 180ms ease, color 180ms ease;
 }
@@ -302,7 +302,7 @@ p {
 
 .portrait-card p {
   color: var(--sun);
-  font-size: 0.78rem;
+  font-size: 0.905rem;
   font-weight: 700;
   letter-spacing: 0.22em;
 }
@@ -311,13 +311,13 @@ p {
   display: block;
   margin: 8px 0 6px;
   font-family: var(--serif);
-  font-size: 1.3rem;
+  font-size: 1.425rem;
   letter-spacing: 0.08em;
 }
 
 .portrait-card span {
   color: rgba(247, 243, 233, 0.74);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
   line-height: 1.75;
 }
 
@@ -344,7 +344,7 @@ p {
 .metric strong {
   color: var(--forest);
   font-family: var(--serif);
-  font-size: clamp(2.4rem, 4vw, 3.55rem);
+  font-size: clamp(2.525rem, 4vw, 3.675rem);
   font-weight: 700;
   line-height: 1;
 }
@@ -356,7 +356,7 @@ p {
 
 .metric span {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
   line-height: 1.7;
 }
 
@@ -379,7 +379,7 @@ p {
 .profile .section-title h2,
 .collaboration h2 {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.45vw, 3rem);
+  font-size: clamp(2.125rem, 3.45vw, 3.125rem);
   line-height: 1.58;
   letter-spacing: 0.06em;
 }
@@ -411,14 +411,14 @@ p {
 
 .work-card .number {
   margin-bottom: 72px;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   letter-spacing: 0.16em;
 }
 
 .work-card h3 {
   margin-bottom: 18px;
   font-family: var(--serif);
-  font-size: 1.36rem;
+  font-size: 1.485rem;
   letter-spacing: 0.06em;
 }
 
@@ -428,7 +428,7 @@ p {
 }
 
 .work-card a {
-  font-size: 0.91rem;
+  font-size: 1.035rem;
   font-weight: 500;
 }
 
@@ -504,13 +504,13 @@ p {
 .profile-photo strong {
   color: var(--forest);
   font-family: var(--serif);
-  font-size: 1.08rem;
+  font-size: 1.205rem;
   letter-spacing: 0.06em;
 }
 
 .profile-photo span {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
   line-height: 1.75;
 }
 
@@ -534,7 +534,7 @@ p {
 .profile-label {
   margin-bottom: 26px;
   color: var(--clay);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -643,13 +643,13 @@ p {
 
 .moment-card strong {
   font-family: var(--serif);
-  font-size: 0.98rem;
+  font-size: 1.105rem;
   letter-spacing: 0.06em;
 }
 
 .moment-card span {
   color: rgba(247, 243, 233, 0.78);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
   line-height: 1.55;
 }
 
@@ -693,7 +693,7 @@ p {
 .credential-number {
   margin-bottom: 18px;
   color: var(--clay);
-  font-size: 0.72rem;
+  font-size: 0.845rem;
   letter-spacing: 0.18em;
 }
 
@@ -705,7 +705,7 @@ p {
   max-width: 520px;
   margin-bottom: 12px;
   font-family: var(--serif);
-  font-size: clamp(1.22rem, 1.8vw, 1.48rem);
+  font-size: clamp(1.345rem, 1.8vw, 1.605rem);
   line-height: 1.42;
   letter-spacing: 0.03em;
 }
@@ -722,7 +722,7 @@ p {
 
 .credential-card span {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.905rem;
   line-height: 1.6;
 }
 
@@ -749,7 +749,7 @@ p {
   margin-bottom: 14px;
   color: var(--forest);
   font-family: var(--serif);
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-size: clamp(1.475rem, 2vw, 1.925rem);
   line-height: 1.5;
 }
 
@@ -777,7 +777,7 @@ p {
 .credential-list h3 {
   margin-bottom: 20px;
   font-family: var(--serif);
-  font-size: 1.14rem;
+  font-size: 1.265rem;
   letter-spacing: 0.06em;
 }
 
@@ -799,13 +799,13 @@ p {
 .credential-list strong {
   color: var(--forest);
   font-family: var(--serif);
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 1.55;
 }
 
 .credential-list span {
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.985rem;
   line-height: 1.65;
 }
 
@@ -863,7 +863,7 @@ p {
   display: block;
   color: var(--forest);
   font-family: var(--serif);
-  font-size: 0.9rem;
+  font-size: 1.025rem;
   font-weight: 700;
 }
 
@@ -871,7 +871,7 @@ p {
   display: block;
   margin-top: 4px;
   color: var(--muted);
-  font-size: 0.74rem;
+  font-size: 0.865rem;
   line-height: 1.55;
 }
 
@@ -887,13 +887,13 @@ p {
 .course-school {
   margin-bottom: 12px;
   color: var(--clay);
-  font-size: 0.91rem;
+  font-size: 1.035rem;
   font-weight: 500;
 }
 
 .course h3 {
   font-family: var(--serif);
-  font-size: clamp(1.42rem, 2vw, 1.65rem);
+  font-size: clamp(1.545rem, 2vw, 1.775rem);
   font-weight: 700;
   letter-spacing: 0.06em;
 }
@@ -906,14 +906,14 @@ p {
 .course-subtitle {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
   line-height: 1.7;
 }
 
 .status {
   margin-top: 9px;
   color: var(--muted);
-  font-size: 0.87rem;
+  font-size: 0.995rem;
 }
 
 .tags {
@@ -928,7 +928,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.965rem;
 }
 
 .speaking {
@@ -942,7 +942,7 @@ p {
 .speaking-copy h2 {
   margin-bottom: 22px;
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.45vw, 3rem);
+  font-size: clamp(2.125rem, 3.45vw, 3.125rem);
   line-height: 1.58;
   letter-spacing: 0.06em;
 }
@@ -951,7 +951,7 @@ p {
   margin-bottom: 20px;
   color: var(--clay);
   font-family: var(--serif);
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-size: clamp(1.375rem, 2vw, 1.675rem);
   line-height: 1.75;
   letter-spacing: 0.07em;
 }
@@ -973,7 +973,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.985rem;
 }
 
 .speaking-visuals {
@@ -1001,7 +1001,7 @@ p {
 .speaking-photo figcaption {
   padding-top: 12px;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
 }
 
 .speaking-poster img {
@@ -1023,14 +1023,14 @@ p {
 .podcast-copy h2 {
   margin-bottom: 20px;
   font-family: var(--serif);
-  font-size: clamp(2.3rem, 4vw, 3.45rem);
+  font-size: clamp(2.425rem, 4vw, 3.575rem);
   letter-spacing: 0.1em;
 }
 
 .podcast-lead {
   margin-bottom: 22px;
   color: var(--sun);
-  font-size: 1.13rem;
+  font-size: 1.255rem;
 }
 
 .podcast-copy > p:last-of-type {
@@ -1040,7 +1040,7 @@ p {
 
 .text-link {
   border-bottom: 1px solid rgba(247, 243, 233, 0.54);
-  font-size: 0.94rem;
+  font-size: 1.065rem;
 }
 
 .guest-gallery {
@@ -1064,7 +1064,7 @@ p {
 .guest-gallery figcaption {
   padding-top: 10px;
   color: rgba(247, 243, 233, 0.64);
-  font-size: 0.76rem;
+  font-size: 0.885rem;
   line-height: 1.65;
 }
 
@@ -1079,7 +1079,7 @@ p {
   align-items: center;
   gap: 12px;
   color: rgba(247, 243, 233, 0.72);
-  font-size: 0.86rem;
+  font-size: 0.985rem;
   letter-spacing: 0.1em;
 }
 
@@ -1114,14 +1114,14 @@ p {
   justify-content: space-between;
   margin-bottom: 15px;
   color: rgba(247, 243, 233, 0.48);
-  font-size: 0.73rem;
+  font-size: 0.855rem;
   letter-spacing: 0.24em;
 }
 
 .reels-heading p {
   color: var(--cream);
   font-family: var(--serif);
-  font-size: 1rem;
+  font-size: 1.125rem;
   letter-spacing: 0.12em;
 }
 
@@ -1149,13 +1149,13 @@ p {
 .short-video p {
   margin-bottom: 7px;
   color: var(--sun);
-  font-size: 0.72rem;
+  font-size: 0.845rem;
   letter-spacing: 0.2em;
 }
 
 .short-video h3 {
   font-family: var(--serif);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
   font-weight: 500;
   line-height: 1.7;
   letter-spacing: 0.07em;
@@ -1168,7 +1168,7 @@ p {
   gap: 16px;
   margin-top: 19px;
   color: rgba(247, 243, 233, 0.53);
-  font-size: 0.76rem;
+  font-size: 0.885rem;
 }
 
 .reel-more span {
@@ -1212,14 +1212,14 @@ p {
 }
 
 .gallery-caption strong {
-  font-size: 1.3rem;
+  font-size: 1.425rem;
 }
 
 .parents-copy .lead {
   margin: 22px 0 14px;
   color: var(--clay);
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: 1.325rem;
 }
 
 .parents-copy .lead + p {
@@ -1236,7 +1236,7 @@ p {
 .parent-themes p {
   padding: 15px 17px;
   background: var(--paper);
-  font-size: 0.9rem;
+  font-size: 1.025rem;
 }
 
 .recode-note {
@@ -1249,7 +1249,7 @@ p {
 .recode-label {
   margin-bottom: 12px;
   color: var(--clay);
-  font-size: 0.72rem;
+  font-size: 0.845rem;
   font-weight: 700;
   letter-spacing: 0.18em;
 }
@@ -1257,14 +1257,14 @@ p {
 .recode-note h3 {
   margin-bottom: 12px;
   font-family: var(--serif);
-  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-size: clamp(1.375rem, 2vw, 1.675rem);
   line-height: 1.6;
   letter-spacing: 0.06em;
 }
 
 .recode-note p:last-child {
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 1.065rem;
   line-height: 2;
 }
 
@@ -1290,13 +1290,13 @@ p {
 .registration h3 {
   margin-bottom: 8px;
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: 1.325rem;
 }
 
 .registration p {
   margin-bottom: 17px;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 1.005rem;
   line-height: 1.75;
 }
 
@@ -1309,7 +1309,7 @@ p {
 .registration .button {
   min-height: 43px;
   padding: 9px 19px;
-  font-size: 0.86rem;
+  font-size: 0.985rem;
 }
 
 .parent-actions {
@@ -1332,7 +1332,7 @@ p {
 
 .line-banner h2 {
   font-family: var(--serif);
-  font-size: clamp(1.45rem, 2.55vw, 2rem);
+  font-size: clamp(1.575rem, 2.55vw, 2.125rem);
   line-height: 1.55;
   letter-spacing: 0.06em;
 }
@@ -1354,7 +1354,7 @@ p {
 
 .line-actions p {
   color: var(--muted);
-  font-size: 0.89rem;
+  font-size: 1.015rem;
   line-height: 1.8;
 }
 
@@ -1440,7 +1440,7 @@ p {
 .terra-visual-main figcaption {
   padding: 12px 16px;
   color: var(--cream);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
   line-height: 1.6;
 }
 
@@ -1494,7 +1494,7 @@ p {
 .program > p:first-child {
   margin-bottom: 40px;
   color: rgba(247, 243, 233, 0.5);
-  font-size: 0.73rem;
+  font-size: 0.855rem;
   letter-spacing: 0.2em;
 }
 
@@ -1504,7 +1504,7 @@ p {
 
 .program h3 {
   font-family: var(--serif);
-  font-size: 1.9rem;
+  font-size: 2.025rem;
   letter-spacing: 0.1em;
 }
 
@@ -1520,7 +1520,7 @@ p {
 
 .program p:last-child {
   color: rgba(247, 243, 233, 0.68);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
 }
 
 .program.active p:last-child {
@@ -1563,14 +1563,14 @@ p {
   margin: auto;
   padding: 53px 32px 45px;
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 1.005rem;
 }
 
 .footer-title {
   margin-bottom: 9px;
   color: var(--forest);
   font-family: var(--serif);
-  font-size: 1.08rem;
+  font-size: 1.205rem;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
@@ -1600,7 +1600,7 @@ p {
   margin-bottom: 12px;
   color: var(--forest);
   font-family: var(--serif);
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.425rem, 2.5vw, 1.925rem);
   line-height: 1.5;
 }
 
@@ -1662,7 +1662,7 @@ p {
   max-width: 680px;
   margin: 16px 0 22px;
   font-family: var(--serif);
-  font-size: clamp(2.2rem, 4.5vw, 4.25rem);
+  font-size: clamp(2.325rem, 4.5vw, 4.375rem);
   line-height: 1.22;
   letter-spacing: 0.04em;
 }
@@ -1670,7 +1670,7 @@ p {
 .proposal-hero-copy > p:not(.overline) {
   max-width: 620px;
   color: var(--muted);
-  font-size: clamp(0.98rem, 1.22vw, 1.08rem);
+  font-size: clamp(1.105rem, 1.22vw, 1.205rem);
   line-height: 1.9;
 }
 
@@ -1700,7 +1700,7 @@ p {
 .proposal-side-photo figcaption {
   padding-top: 12px;
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: 0.955rem;
   line-height: 1.75;
 }
 
@@ -1726,14 +1726,14 @@ p {
   display: block;
   margin-bottom: 18px;
   color: var(--clay);
-  font-size: 0.74rem;
+  font-size: 0.865rem;
   font-weight: 700;
   letter-spacing: 0.16em;
 }
 
 .proposal-fact strong {
   font-family: var(--serif);
-  font-size: clamp(1.24rem, 2vw, 1.65rem);
+  font-size: clamp(1.365rem, 2vw, 1.775rem);
   font-weight: 700;
   line-height: 1.6;
 }
@@ -1756,7 +1756,7 @@ p {
 
 .proposal-copy p {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 2.05;
 }
 
@@ -1786,13 +1786,13 @@ p {
 .proposal-podcast-brief h3 {
   margin-bottom: 12px;
   font-family: var(--serif);
-  font-size: clamp(1.25rem, 1.9vw, 1.56rem);
+  font-size: clamp(1.375rem, 1.9vw, 1.685rem);
   line-height: 1.45;
 }
 
 .proposal-podcast-brief p:not(.proposal-proof-label) {
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 1.085rem;
   line-height: 1.85;
 }
 
@@ -1839,7 +1839,7 @@ p {
 .proposal-podcast-photos figcaption {
   padding-top: 8px;
   color: var(--muted);
-  font-size: 0.74rem;
+  font-size: 0.865rem;
   line-height: 1.55;
 }
 
@@ -1893,7 +1893,7 @@ p {
 .audience-heading p {
   margin-bottom: 13px;
   color: var(--clay);
-  font-size: 0.74rem;
+  font-size: 0.865rem;
   font-weight: 700;
   letter-spacing: 0.13em;
 }
@@ -1901,7 +1901,7 @@ p {
 .audience-heading h3 {
   margin-bottom: 18px;
   font-family: var(--serif);
-  font-size: clamp(1.58rem, 2.4vw, 2.25rem);
+  font-size: clamp(1.705rem, 2.4vw, 2.375rem);
   line-height: 1.48;
   letter-spacing: 0.05em;
 }
@@ -1909,7 +1909,7 @@ p {
 .audience-heading span {
   display: block;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.075rem;
   line-height: 1.9;
 }
 
@@ -1937,7 +1937,7 @@ p {
 .proposal-theme p {
   margin-bottom: 26px;
   color: var(--clay);
-  font-size: 0.74rem;
+  font-size: 0.865rem;
   font-weight: 700;
   letter-spacing: 0.13em;
 }
@@ -1945,7 +1945,7 @@ p {
 .proposal-theme h3 {
   margin-bottom: 18px;
   font-family: var(--serif);
-  font-size: clamp(1.28rem, 2vw, 1.65rem);
+  font-size: clamp(1.405rem, 2vw, 1.775rem);
   line-height: 1.58;
   letter-spacing: 0.04em;
 }
@@ -1953,7 +1953,7 @@ p {
 .proposal-theme h4 {
   margin: 0 0 14px;
   font-family: var(--serif);
-  font-size: clamp(1.04rem, 1.5vw, 1.22rem);
+  font-size: clamp(1.165rem, 1.5vw, 1.345rem);
   line-height: 1.55;
   letter-spacing: 0.03em;
 }
@@ -1961,7 +1961,7 @@ p {
 .proposal-theme span,
 .value-item p {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
   line-height: 1.9;
 }
 
@@ -1979,7 +1979,7 @@ p {
 .value-item h3 {
   margin-bottom: 18px;
   font-family: var(--serif);
-  font-size: 1.36rem;
+  font-size: 1.485rem;
 }
 
 .proposal-credentials {
@@ -2023,7 +2023,7 @@ p {
 .proposal-proof-label {
   margin-bottom: 14px;
   color: var(--clay);
-  font-size: 0.72rem;
+  font-size: 0.845rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -2032,14 +2032,14 @@ p {
 .proposal-proof-card h3 {
   margin-bottom: 14px;
   font-family: var(--serif);
-  font-size: clamp(1.22rem, 1.8vw, 1.52rem);
+  font-size: clamp(1.345rem, 1.8vw, 1.645rem);
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
 
 .proposal-proof-card p:not(.proposal-proof-label) {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
   line-height: 1.85;
 }
 
@@ -2061,13 +2061,13 @@ p {
 
 .proposal-cert-list strong {
   color: var(--ink);
-  font-size: 0.82rem;
+  font-size: 0.945rem;
   line-height: 1.45;
 }
 
 .proposal-cert-list span {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.925rem;
   line-height: 1.5;
 }
 
@@ -2083,7 +2083,7 @@ p {
   padding-bottom: 12px;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1.025rem;
   line-height: 1.75;
 }
 
@@ -2110,7 +2110,7 @@ p {
 .proposal-proof-photos figcaption {
   padding-top: 10px;
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.885rem;
   line-height: 1.6;
 }
 
@@ -2148,7 +2148,7 @@ p {
 .proposal-contact h2 {
   margin: 18px 0 24px;
   font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2.125rem, 4vw, 3.625rem);
   line-height: 1.4;
   letter-spacing: 0.06em;
 }
@@ -2171,7 +2171,7 @@ p {
   padding: 10px 15px;
   border: 1px solid rgba(247, 243, 233, 0.24);
   color: var(--cream);
-  font-size: 0.92rem;
+  font-size: 1.045rem;
   line-height: 1.5;
 }
 
@@ -2396,11 +2396,11 @@ p {
 
 @media (max-width: 600px) {
   .brand-copy {
-    font-size: 0.94rem;
+    font-size: 1.065rem;
   }
 
   .hero h1 {
-    font-size: clamp(2.18rem, 9.8vw, 2.48rem);
+    font-size: clamp(2.305rem, 9.8vw, 2.605rem);
   }
 
   .teaching-gallery {
@@ -2431,7 +2431,7 @@ p {
   }
 
   .portrait-card strong {
-    font-size: 1.1rem;
+    font-size: 1.225rem;
   }
 
   .portrait-avatar {
