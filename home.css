@@ -323,3 +323,30 @@
   .home-page .salon-intro { margin-bottom: 28px; }
   .home-page .salon-tagline br { display: none; }
 }
+
+/* Course positioning: framework first, teaching evidence second. */
+.home-page .course-design { border-top: 1px solid var(--line); padding-bottom: 50px; }
+.home-page .course-design-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 58px; align-items: center; margin-bottom: 38px; }
+.home-page .course-design-tagline { color: var(--clay); font-family: var(--serif); font-size: clamp(22px, 2.3vw, 30px); line-height: 1.65; }
+.home-page .course-design-lead { color: var(--muted); font-size: 18px; line-height: 1.95; }
+.home-page .competency-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.home-page .competency-card { display: flex; flex-direction: column; padding: 28px 24px; background: var(--paper); border-top: 3px solid var(--forest); }
+.home-page .competency-card .overline { font-size: 12px; letter-spacing: .1em; }
+.home-page .competency-card h3 { font-family: var(--serif); font-size: 28px; font-weight: 500; margin: 0 0 12px; }
+.home-page .competency-card p { font-size: 17px; line-height: 1.9; color: var(--muted); }
+.home-page .competency-card .competency-focus { color: var(--forest); font-weight: 700; margin-bottom: 14px; }
+.home-page .competency-card .competency-practice { margin-top: auto; padding-top: 24px; font-size: 14px; color: var(--clay); }
+.home-page .course-tailoring { display: flex; gap: 32px; align-items: center; padding: 30px; margin-top: 24px; background: var(--mist); }
+.home-page .course-tailoring h3 { font-family: var(--serif); font-size: 23px; font-weight: 500; line-height: 1.6; margin-bottom: 12px; }
+.home-page .course-tailoring p { font-size: 17px; color: var(--muted); line-height: 1.9; }
+.home-page .course-tailoring .button { flex-shrink: 0; }
+.home-page #teaching-experience { border-top: 0; padding-top: 20px; }
+@media (max-width: 900px) {
+  .home-page .competency-grid { gap: 14px; }
+  .home-page .competency-card { padding: 24px 18px; }
+  .home-page .course-design-heading { gap: 30px; }
+}
+@media (max-width: 640px) {
+  .home-page .course-design-heading, .home-page .competency-grid { grid-template-columns: 1fr; gap: 24px; }
+  .home-page .course-tailoring { flex-direction: column; align-items: flex-start; padding: 24px; gap: 20px; }
+}
