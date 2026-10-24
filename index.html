@@ -15,6 +15,8 @@
     <script src="language.js?v=20261010" defer></script>
     <link rel="alternate" hreflang="zh-Hant" href="index.html">
     <link rel="alternate" hreflang="zh-Hans" href="index-sc.html">
+    <link rel="stylesheet" href="articles/home-articles.css">
+    <script src="articles/articles.js" defer></script>
 </head>
   <body class="home-page">
     <nav class="language-switch" aria-label="語言切換">
@@ -223,7 +225,11 @@
           </div>
 
         </div>
-        <div class="podcast-gallery reveal">
+        <section class="podcast-articles" aria-label="專題文章">
+<div class="podcast-articles-heading"><h3>專題文章</h3><a class="text-link" href="articles/">查看全部文章 →</a></div>
+<div class="article-grid" data-article-list data-manifest="articles/publication-state.json" data-root="articles/" data-limit="3"></div>
+</section>
+<div class="podcast-gallery reveal">
           <p class="overline">對話現場 / CONVERSATIONS</p>
           <div class="guest-gallery" aria-label="無邊界學習訪談來賓合照">
             <figure>
