@@ -25,25 +25,33 @@
 </article><section class="article-share" aria-labelledby="share-heading"><h2 id="share-heading">分享這篇文章</h2><p>把這場教育對話，分享給你在乎的人。</p><div class="share-actions">
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fevaa83.github.io%2Fintroduce-self%2Farticles%2F12%2F" target="_blank" rel="noopener noreferrer" aria-label="分享到 Facebook（另開視窗）">Facebook</a>
 <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fevaa83.github.io%2Fintroduce-self%2Farticles%2F12%2F" target="_blank" rel="noopener noreferrer" aria-label="分享到 LINE（另開視窗）">LINE</a>
-<button type="button" data-share-native>更多分享</button><button type="button" data-share-copy>複製連結</button></div><p data-share-status role="status" aria-live="polite"></p><input data-share-url aria-label="文章分享連結" readonly hidden></section>
-<style>.article-share{margin:3rem 0 2rem;padding:1.5rem;border:1px solid #E7D8C4;border-radius:16px;background:#F4ECE1}.article-share h2{margin:0 0 .5rem;color:#1E3A2F;font-size:1.25rem}.article-share p{font-size:.9rem}.share-actions{display:flex;flex-wrap:wrap;gap:.75rem}.share-actions a,.share-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.65rem 1rem;border:1px solid #346554;border-radius:10px;background:#fff;color:#1E3A2F;font:inherit;text-decoration:none;cursor:pointer}.share-actions a:hover,.share-actions button:hover{background:#E6ECE8}.share-actions a:focus-visible,.share-actions button:focus-visible{outline:3px solid #346554;outline-offset:3px}.article-share input{box-sizing:border-box;max-width:100%;width:100%;padding:.65rem;font:inherit}.article-share [data-share-status]:empty{display:none}</style>
+<button type="button" data-share-pixnet>痞客邦</button><button type="button" data-share-native>更多分享</button><button type="button" data-share-copy>複製連結</button></div><p data-share-status role="status" aria-live="polite"></p><textarea data-share-url aria-label="文章分享內容" rows="3" readonly hidden></textarea><div data-share-pixnet-help hidden><p>痞客邦分享需登入後自行發文：將標題與連結貼到新文章，再確認發布。</p><a href="https://www.pixnet.net/" target="_blank" rel="noopener noreferrer">開啟痞客邦（另開視窗） ↗</a></div></section>
+<style>.article-share{margin:3rem 0 2rem;padding:1.5rem;border:1px solid #E7D8C4;border-radius:16px;background:#F4ECE1}.article-share h2{margin:0 0 .5rem;color:#1E3A2F;font-size:1.25rem}.article-share p{font-size:.9rem}.share-actions{display:flex;flex-wrap:wrap;gap:.75rem}.share-actions a,.share-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.65rem 1rem;border:1px solid #346554;border-radius:10px;background:#fff;color:#1E3A2F;font:inherit;text-decoration:none;cursor:pointer}.share-actions a:hover,.share-actions button:hover{background:#E6ECE8}.share-actions a:focus-visible,.share-actions button:focus-visible{outline:3px solid #346554;outline-offset:3px}.article-share textarea{box-sizing:border-box;max-width:100%;width:100%;padding:.65rem;font:inherit}.article-share [data-share-status]:empty{display:none}</style>
 <script>(() => {
   const section = document.querySelector('.article-share');
   if (!section) return;
   const url = document.querySelector('link[rel="canonical"]').href;
   const status = section.querySelector('[data-share-status]');
   const input = section.querySelector('[data-share-url]');
-  async function copyLink() {
+  async function copyText(value, successMessage, fallbackMessage) {
     try {
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(value);
       input.hidden = true;
-      status.textContent = '連結已複製，可以貼到任何社群平台。';
+      status.textContent = successMessage;
     } catch {
-      input.hidden = false; input.value = url; input.focus(); input.select();
-      status.textContent = '請複製下方連結，貼到你想分享的平台。';
+      input.hidden = false; input.value = value; input.focus(); input.select();
+      status.textContent = fallbackMessage;
     }
   }
+  function copyLink() {
+    return copyText(url, '連結已複製，可以貼到任何社群平台。', '請複製下方連結，貼到你想分享的平台。');
+  }
   section.querySelector('[data-share-copy]').addEventListener('click', copyLink);
+  section.querySelector('[data-share-pixnet]').addEventListener('click', async () => {
+    section.querySelector('[data-share-pixnet-help]').hidden = false;
+    const title = (document.querySelector('h1')?.textContent || document.title).trim();
+    await copyText(title + '\n' + url, '標題與連結已複製，請開啟痞客邦，貼到新文章後發布。', '請複製下方標題與連結，再開啟痞客邦貼到新文章。');
+  });
   section.querySelector('[data-share-native]').addEventListener('click', async () => {
     if (typeof navigator.share !== 'function') { await copyLink(); return; }
     try { await navigator.share({ title: document.title, url }); status.textContent = '已開啟分享選單。'; }
