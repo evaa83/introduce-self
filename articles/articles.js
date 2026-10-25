@@ -39,7 +39,7 @@
             const image = element('img'); image.src = new URL(article.cover, root).href; image.alt = article.title; image.loading = 'lazy'; image.width = 800; image.height = 520; link.append(image);
           }
           const body = element('div', '', 'article-card-body');
-          body.append(element('p', `第 ${article.episodeNumber} 集${article.categories.length ? ' · ' + article.categories.join('、') : ''}`, 'article-meta'));
+          if (article.categories.length) body.append(element('p', article.categories.join('、'), 'article-meta'));
           body.append(element('h3', article.title));
           body.append(element('p', article.summary || article.subtitle || '', 'article-excerpt'));
           body.append(element('span', '閱讀全文 →', 'article-read'));
