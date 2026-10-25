@@ -18,16 +18,19 @@
       "categories": [
         "第一篇：看見時代處境"
       ],
-      "cover": "",
-      "assets": [],
+      "cover": "assets/12/2d22466d-504c-4958-9594-69c2f0fcaf79.jpg",
+      "assets": [
+        "articles/assets/12/2d22466d-504c-4958-9594-69c2f0fcaf79.jpg",
+        "articles/assets/12/f5e23f66-3590-4585-a0fb-92c81e757afa.jpg"
+      ],
       "url": "12/",
       "publishedAt": "2026-10-24T10:43:52.952Z",
-      "revision": "902bc2fa-bef1-4ef7-84ac-c76c3716c173"
+      "revision": "ab70a2f9-4bc2-44c8-9622-b50baaf51fca"
     }
   ],
   "operations": {
     "12": {
-      "id": "902bc2fa-bef1-4ef7-84ac-c76c3716c173",
+      "id": "ab70a2f9-4bc2-44c8-9622-b50baaf51fca",
       "action": "publish"
     }
   }
