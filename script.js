@@ -1,6 +1,7 @@
 const simplified = document.documentElement.lang === "zh-Hans";
-const menuOpenLabel = simplified ? "开启选单" : "開啟選單";
-const menuCloseLabel = simplified ? "关闭选单" : "關閉選單";
+const english = document.documentElement.lang === "en";
+const menuOpenLabel = english ? "Open menu" : simplified ? "开启选单" : "開啟選單";
+const menuCloseLabel = english ? "Close menu" : simplified ? "关闭选单" : "關閉選單";
 
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".primary-nav");
