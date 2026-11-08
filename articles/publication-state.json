@@ -3,7 +3,7 @@
   "articles": [
     {
       "episodeNumber": 52,
-      "title": "拆解國中教育的標準答案：5in 實驗教育如何用流程導向陪伴孩子迎向未來",
+      "title": "拆解國中教育的標準答案：5IN實驗教育如何用流程導向陪伴孩子迎向未來",
       "subtitle": "面對未知的工作與生活挑戰，與其背誦瞬息萬變的知識，不如培養解決問題的邏輯思維與軟實力。",
       "summary": "AI 與自動化正快速改變未來的工作樣貌，傳統的背誦與記憶已難以應付真實人生中的各種挑戰。本集《無邊界學習》節目中，主持人江宜汾邀請「5in實驗教育機構」計畫主持人李有誠，深入探討國中階段的創新教育設計。從主打 80% 不同於傳統課綱的「流程導向學習」、沒有辦公室的緊密師生陪伴，到帶領學生完成真實的社會專案，看教育如何跳脫標準答案，賦予青少年真正帶得走的思考與實踐能力。",
       "author": "1221 編輯團隊",
@@ -21,11 +21,12 @@
       "cover": "assets/52/2ab9f0a7-af70-4a5e-88be-b0b187a00fb4.jpg",
       "assets": [
         "articles/assets/52/2ab9f0a7-af70-4a5e-88be-b0b187a00fb4.jpg",
-        "articles/assets/52/d68e509f-8a93-4364-836b-e3e668dcbb13.jpg"
+        "articles/assets/52/75af63d7-41e8-4f6d-861e-dc2a065ec40d.jpg",
+        "articles/assets/52/bc56be4a-7792-4cc2-916e-2dccf6368453.jpg"
       ],
       "url": "52/",
       "publishedAt": "2026-11-07T18:24:25.983Z",
-      "revision": "87b80750-4bac-4f41-b955-4b891c57560e"
+      "revision": "7a8c384d-6f74-4c05-9df8-1e93f703fc2f"
     },
     {
       "episodeNumber": 45,
@@ -119,7 +120,7 @@
       "action": "publish"
     },
     "52": {
-      "id": "87b80750-4bac-4f41-b955-4b891c57560e",
+      "id": "7a8c384d-6f74-4c05-9df8-1e93f703fc2f",
       "action": "publish"
     }
   }
