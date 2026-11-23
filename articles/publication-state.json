@@ -18,8 +18,10 @@
       "categories": [
         "第一篇：看見時代處境"
       ],
-      "cover": "",
-      "assets": [],
+      "cover": "assets/81/default-cover.jpg",
+      "assets": [
+        "articles/assets/81/default-cover.jpg"
+      ],
       "url": "81/",
       "publishedAt": "2026-11-21T03:39:18.216Z",
       "revision": "ddd456de-e336-411d-a49a-ebf8a7c76f69"
